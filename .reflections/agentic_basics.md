@@ -1,8 +1,8 @@
 
 # Summary of agentic workflow concerns
 
-**Date recorded**: 05/04/2026
-**Last updated**: 05/04/2026
+- **Date recorded**: 05/04/2026
+- **Last updated**: 05/04/2026
 
 ## What “agentic” means
 Agentic software is defined as software that can decide its own next steps rather than following only a rigid fixed script.

@@ -1,7 +1,7 @@
 # GitHub Copilot Multi-Agent Orchestration - Execution Wrappers vs GitHub Actions
 
-**Date recorded**: 05/04/2026
-**Last updated**: 05/04/2026
+- **Date recorded**: 05/04/2026
+- **Last updated**: 05/04/2026
 
 GitHub Copilot web does not allow switching agents mid-task or orchestrating natively. This reflection explores alternative approaches to orchestrate multi-agent workflows.
 
@@ -96,7 +96,7 @@ Composed execution can be achieved by dynamically combining agents via strict st
 
 This manages context, allows parallel tasking, and follows a modular architecture principle.
 
-See [.reflections\agent_orchestration_2.md](.reflections\agent_orchestration_2.md) for further information ont his approach.
+See [.reflections\agent_orchestration_2.md](https://github.com/newwby/Tabletop-Engine/blob/main/.reflections/orchestration_2.md) for further information ont his approach.
 
 ---
 

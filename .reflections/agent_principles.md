@@ -1,8 +1,8 @@
 
 # Principles of agent development
 
-**Date recorded**: 05/04/2026
-**Last updated**: 05/04/2026
+- **Date recorded**: 05/04/2026
+- **Last updated**: 05/04/2026
 
 This reflection is a guideline for how to introduce effective agent files into a multi-agent workflow.
 
@@ -14,7 +14,7 @@ Agent files should remain modular and task-specific, avoiding inclusion of repo-
 
 Shared project context should instead be placed in `.github/copilot-instructions.md`. Adhering to this enables agent files to be reused both in Copilot and in GitHub Actions without introducing noise or unintended behaviour.
 
-See [.reflections\agent_orchestration_1.md](.reflections\agent_orchestration_1.md) for further information ont his approach.
+See [.reflections\agent_orchestration_1.md](https://github.com/newwby/Tabletop-Engine/blob/main/.reflections/orchestration_1.md) for further information ont his approach.
 
 ### Developer Notes
 
