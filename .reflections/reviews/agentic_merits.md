@@ -1,11 +1,11 @@
-# Project learning evaluation as a reflective blog subject
+# Merits of agentic workflows
 
 - **Date recorded**: 05/04/2026
 - **Last updated**: 05/04/2026
 
 This reflection covered the potential of the project, investigating agentic development to build a tabletop campaign, as study and blog material. It then expands into my personal observed benefits, maps to known research, and means to critically evaluate without harming learning depth.
 
-## Anecdotal analysis
+## Project learning evaluation as a reflective blog subject
 
 ### Themes for reflection
 
