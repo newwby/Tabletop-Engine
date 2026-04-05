@@ -13,7 +13,6 @@ Agentic development was framed as a meaningful topic for reflective writing beca
 
 Agent development appears to shift work toward prompt design, task structuring, orchestration, review, evaluation, and iterative refinement. Research in the field suggests that developers overestimate their productivity gains utilising agents for development, supporting the hypothesis that it changes where the work lays.
 
-
 ### Benefits
 
 My personal experience is that multi-agent workflows fit my working style well, as they enable setting an agent on a task, reviewing another in parallel, and maintaining momentum across several work threads.
