@@ -11,6 +11,14 @@ In practical terms, this means choosing tasks, gathering context, and performing
 
 ---
 
+## Terminology
+
+* MCP - model context protocol, a standard interface for an LLM to interact with a tool or data source.
+* Structured output - a format assurance to ensure tool response or model action is usable JSON.
+* RAG - retrieval augmented generation, improves LLM accuracy by retrieving data from external sources.
+
+---
+
 ## Risks
 
 * building monolithic agents
