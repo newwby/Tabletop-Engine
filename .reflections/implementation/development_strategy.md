@@ -139,10 +139,6 @@ Branching was surfaced as important both for repo cleanliness and long-term agen
 
 A recurring theme was that this project has strong value as a case study in applying software development principles to D&D campaign development. The mapping surfaced clearly: canon as source of truth, compiled session packs as derived artifacts, session logs as change history, continuity/mechanics checks as review gates, branching strategy as isolation of proposals, and atomic files as modular architecture. This gives the project a strong crossover appeal between software developers and D&D players, and makes it suitable for a blog or portfolio write-up focused on human-centred workflow design and cognitive load reduction.
 
-### Disney Campaign Context
-
-The uploaded WIP Disney tabletop campaign document showed why structure and continuity tooling matter. It contains many factions, dynasties, delegations, named characters, regions, and quest lines, including Yendis dynasties, the Unfounded Archipelago, the Nautic Channel, the Neverwonder, a very large cast, and a dense quest list. This scale makes continuity management, searchability, and compiled session artifacts especially important. :contentReference[oaicite:0]{index=0} :contentReference[oaicite:1]{index=1} :contentReference[oaicite:2]{index=2}
-
 ## Architectural Decisions or Options Surfaced
 
 The strongest final direction was to keep the agent system relatively small, specialised, and layered. Core agents prioritise campaign truth and session usability: Historian, Session Compiler, DM Screen Assistant, and Continuity Auditor. Content agents such as Quest Designer, NPC Writer, Encounter Designer, and Location / Battle Site Designer are proposal-only. Support agents include Asset Brief Writer, Verification Editor, and Agent Manager.
@@ -160,8 +156,6 @@ GitHub Copilot custom agents: https://docs.github.com/en/copilot/how-tos/use-cop
 GitHub Copilot PR/task workflows: https://docs.github.com/copilot/using-github-copilot/coding-agent/asking-copilot-to-create-a-pull-request
 
 GitHub prompt storage in repositories: https://docs.github.com/en/github-models/use-github-models/storing-prompts-in-github-repositories
-
-The Disney campaign file itself remains a useful internal reference for testing continuity, repo structure, and compiled session outputs because of its scale and density. :contentReference[oaicite:3]{index=3} :contentReference[oaicite:4]{index=4}
 
 ## Open Questions / Next Steps
 
