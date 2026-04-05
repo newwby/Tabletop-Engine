@@ -60,7 +60,7 @@ A script is presented as the best starting point as it offers low overhead, full
 
 Files created during the workflow exist only in the ephemeral runner environment and are not persisted unless explicitly committed or uploaded.
 
-GitHub Actions is best positioned as a post-generation automation layer for validation and review, not as an orchestration engine.
+GitHub Actions is best positioned as a post-generation automation layer for validation and review, not as an orchestration engine. As GitHub Actions enable an event-driven pattern, especially when supported by specialised non-project agents.
 
 ### PR-Based Validation Workflow
 
