@@ -1,7 +1,7 @@
 # Design direction for minimum viable product and beyond
 
-- **Date recorded**: 2026-04-05
-- **Last updated**: 2026-05-05
+- **Date recorded**: 04/04/2026
+- **Last updated**: 05/04/2026
 
 This reflection records the design goals of the MVP, as determined from existing work and other reflections.
 

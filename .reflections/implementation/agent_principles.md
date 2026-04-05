@@ -1,7 +1,7 @@
 
 # Principles of agent development
 
-- **Date recorded**: 05/04/2026
+- **Date recorded**: 03/04/2026
 - **Last updated**: 05/04/2026
 
 This reflection is a discussion of the multi-agent system approach to utilise and guidelines for how to introduce effective agent files.
