@@ -7,6 +7,16 @@ GitHub Copilot web does not allow switching agents mid-task or orchestrating nat
 
 ---
 
+## Orchestration
+
+When people refer to orchestration, they mean a separate layer deciding which agent or model to call, in what order, and how outputs move between steps.
+
+Manual orchestration is the simplest and matches the current approach: a human runs one agent, takes its output, and feeds it into the next task or agent.
+
+Structured prompt chaining simulates orchestration by telling one agent to perform a sequence of stages in one run, though this gives weaker control between steps.
+
+External orchestration uses code or workflow tooling to determine which agent to call, pass outputs forward, and validate results between stages. In this model, Copilot is the execution unit and the orchestrator is the decision-making layer around it.
+
 ## Copilot Agent Constraints & Implications
 
 GitHub Copilot agents cannot be dynamically invoked or switched mid-task, and there is no native support for agent-to-agent delegation or orchestration. This prevents true multi-agent execution flows within a single run. As a result, any orchestration must be simulated either manually (human-in-the-loop) or via prompt composition. Custom agents defined in `.github/agents/*.md` are not executable entities and cannot be invoked programmatically by GitHub Actions or other agents.
@@ -43,10 +53,12 @@ GitHub Actions cannot invoke Copilot agents directly, but they can access agent 
 Agent behaviour in Actions is implemented by:
 - loading agent instruction files
 - combining them with task input (e.g. PR title, body, changed files)
-- sending to an LLM via a script (e.g. Python)
+- sending to an LLM via a script (e.g. Python, Node.js)
 - returning output (e.g. PR comment)
 
-Files created during the workflow (e.g. `review.md`) exist only in the ephemeral runner environment and are not persisted unless explicitly committed or uploaded.
+A script is presented as the best starting point as it offers low overhead, full control, and a straightforward way to chain analysis, generation, and validation steps. 
+
+Files created during the workflow exist only in the ephemeral runner environment and are not persisted unless explicitly committed or uploaded.
 
 GitHub Actions is best positioned as a post-generation automation layer for validation and review, not as an orchestration engine.
 
@@ -101,3 +113,19 @@ See [.reflections\agent_orchestration_2.md](.reflections\agent_orchestration_2.m
 * LangChain and LangGraph for future orchestration once workflows require stateful, branching, or long-running execution. Does complexity justify introducing an orchestration service?
 * GitHub Actions advanced patterns, including `issue_comment` triggers, workflow dispatch inputs, automated PR suggestions, and PR review APIs.
 * LLM integration within GitHub Actions for scalable validation pipelines.
+
+### Orchestration Services
+
+LangChain and LangGraph were surfaced as deeper workflow options, with LangGraph noted as the better fit for deterministic multi-step flows.
+
+**see**: https://docs.langchain.com/oss/python/langchain/quickstart
+**see**: https://www.geeksforgeeks.org/artificial-intelligence/langchain-vs-langgraph/
+
+Microsoft Semantic Kernel was identified as structurally aligned with the Copilot ecosystem and useful for planners, skills, and orchestration logic.
+
+**see**: https://devblogs.microsoft.com/agent-framework/semantic-kernel-multi-agent-orchestration/
+
+AutoGen was noted as the option closest to true multi-agent collaboration because it supports orchestrated agent-to-agent interactions through an external coordination layer.
+
+**see**: https://microsoft.github.io/autogen/stable//user-guide/core-user-guide/design-patterns/mixture-of-agents.html
+
