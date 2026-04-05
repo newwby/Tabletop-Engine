@@ -39,7 +39,7 @@ To stay informed with minimum effort:
 1. Open the project repository on GitHub.
 2. Click the **Issues** tab.
 3. Click **New issue**.
-4. Use one of the existing issue templates.
+4. Use one of the existing issue templates (if none is a perfect match, pick the closest one and explain clearly).
 5. Add a short, clear title.
 6. Fill in the description.
 7. Submit the issue.
