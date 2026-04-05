@@ -1,0 +1,51 @@
+# Portfolio Curation and Agentic TTRPG System Planning
+
+- **Date recorded**: 2026-04-05
+- **Last updated**: 2026-04-05
+
+**Problem statement**: This prompt chain shifted from exploratory discussion into a more deliberate effort to curate a portfolio-quality planning process for an AI-supported tabletop campaign system, while clarifying what had already been determined, what decisions still needed to be made, and how to frame future prompts in a more professional software-design style.
+
+---
+
+## Key concepts
+
+### Portfolio framing and prompt quality
+The existing Disney campaign prompt chain was judged strong in terms of system thinking, modularity, workflow design, and applying software architecture concepts to tabletop development, but weaker as a portfolio artefact because it read as exploratory rather than decisive. The strongest signal was not the Disney theme itself but the framing of campaign support as a software design problem involving agent roles, validation, workflow control, and reduction of human cognitive load. The recommended approach was not to restart from scratch, but to curate the material into a clearer structure: retain selected exploratory material as evidence of iteration, then add a cleaner final planning chain and reflective commentary explaining how the design matured.
+
+### What had already been determined
+Several project-level decisions had effectively already been made. The campaign support problem is being treated as a software system design challenge rather than a one-off prompting exercise. AI agents are intended to be modular, role-based components, and the human remains the design lead, reviewer, and final authority. The system goals are to reduce mental load during sessions, improve campaign consistency and recall, generate practical assets rather than vague fluff, and support long-term campaign sustainability. Agent philosophy had also become clearer: each agent should have one responsibility, minimise overlap, produce structured outputs, remain composable and replaceable, and avoid drifting into vague multi-purpose behaviour. A review or editor agent layer emerged as a particularly strong design decision, with the purpose of validating outputs against prompt intent, detecting ambiguity, and surfacing missing constraints instead of guessing.
+
+### Decisions still needing resolution
+The next clean planning chain needed to focus on unresolved design choices rather than further open-ended exploration. Outstanding decisions included the core system architecture, such as whether the workflow should be a linear pipeline, a branching flow, or use an agent manager or orchestration layer. The final list of agents still needed to be locked down with explicit responsibilities and non-responsibilities. Invocation model also remained open: manual routing by the human, semi-automatic routing by a manager, or a more autonomous approach, with the latter noted as unrealistic in current GitHub Copilot workflows. Additional unresolved areas included output standards, tool boundaries between ChatGPT and Copilot, asset generation strategy, and failure handling when outputs are vague, conflicting, or low-confidence.
+
+### Professional prompting style for final curation
+A more professional prompting style was defined as one that is less exploratory and more structured around clear context, explicit task, constraints, and required output format. Example prompt patterns were given for system design, agent definition, and asset strategy. These were intended to support a cleaner pre-planning prompt chain suitable for portfolio presentation, after which implementation-oriented work would move into GitHub Copilot rather than continuing in web ChatGPT. The aim was to make the prompt chain read like intentional engineering analysis rather than open-ended ideation.
+
+### GitHub Copilot workflow and remote usage
+The intended division of labour was clarified as ChatGPT for system design and Copilot for execution inside the repository. Copilot custom agents were described as being defined in `.github/copilot/*.yaml`, with explicit agent invocation required because Copilot does not reliably auto-select the right agent. In VS Code, the recommended pattern is to instruct Copilot which agent role to act as, what responsibility to execute, and what output format to produce. A short reusable prompt was drafted to invoke the appropriate custom Copilot agent, read root `.md` files for project context, operate only within its defined responsibility, avoid overlapping with other agents, ask if requirements are unclear, and decline if another agent is more appropriate.
+
+### Remote and mobile GitHub workflow
+For remote work from a phone, there was no dedicated standalone github.dev app recommended. The practical advice was to bookmark github.dev and Codespaces in the browser. GitHub Mobile was noted as useful for quick repository viewing and basic edits, but not as a proper substitute for browser-based Copilot-supported work. github.dev was identified as the lightweight browser editor, while Codespaces was positioned as the fuller browser-based development option and the better choice for more serious work while travelling.
+
+### Additional software architecture concepts to explore
+Later in the chain, attention shifted to architecture concepts that had not yet been explored deeply enough. The most relevant additions were orchestration versus choreography, state and source of truth, quality gates beyond the simple editor-agent idea, event-driven workflow options, human-in-the-loop checkpoints, versioning and rollback, confidence and escalation rules, and the distinction between prep-time and live-session modes. These were framed as the kinds of software engineering concepts that could make the system design more rigorous and portfolio-ready once implementation planning became more concrete.
+
+### Diagramming and visual system design
+Several system diagram types were mapped to different communication goals. A block diagram was identified as best for a simple high-level overview, a data flow diagram for showing movement of information between agents and sources of truth, a sequence diagram for showing the runtime flow of a specific task, a state diagram for modelling approval lifecycle and canon management, and C4-style diagrams as the most professional overall documentation approach for a portfolio because they can move from high-level context to containers and components. The recommended visual documentation set combined a C4-style overview for structure, sequence diagrams for key workflows, and a state diagram for draft-to-approved canon transitions. A suggested visual pack included a context diagram, a container or component diagram, a representative sequence diagram, and a state diagram.
+
+### Software engineering principles exploration prompt
+The chain concluded with a markdown prompt designed to explore software engineering principles in this project context. That prompt framed the system as a modular AI agent architecture for tabletop campaign development and requested evaluation of architecture and system design concepts, responsibility and structure principles, control flow and coordination models, data and state management approaches, validation and quality assurance mechanisms, error handling and reliability strategies, scalability and longevity concerns, performance considerations, developer experience, and governance and control. It asked for each concept to be evaluated in terms of what it is, how it applies, benefits, tradeoffs, and whether it should be used, followed by a justified recommended system design and a final set of guiding principles.
+
+## Architectural decisions or options surfaced
+
+The project should be treated as a modular AI-supported system rather than a loose prompt collection. Agent roles should remain narrow and clearly bounded, with the human acting as design lead and approval gate. A dedicated review or editor agent is a core architectural feature rather than an optional enhancement. ChatGPT is best used for design, planning, and architectural clarification, while GitHub Copilot is better suited to repository-level execution and structured implementation support. A more curated prompt chain should focus on locking decisions rather than further broad exploration. For documentation and presentation, C4-style diagrams plus workflow and state visuals were surfaced as the strongest visual communication strategy. Future architecture evaluation should explicitly compare orchestration, choreography, and hybrid models, and should define the source-of-truth model, validation and quality gates, failure handling, and different operating modes for preparation versus live session use.
+
+## Further research/links to explore
+
+Further exploration was identified around orchestration versus choreography, source-of-truth and canon-management models, quality gates, event-driven task flow, rollback and versioning, confidence-based escalation, and prep-time versus live-session pipeline design. On the tooling side, the next practical area for deeper work was exactly how to use GitHub Copilot cloud agents from VS Code and from the repository, including how custom Copilot agents are defined in `.github/copilot/*.yaml`, how to invoke them intentionally, and how to structure tasks so that each agent operates only within its defined remit. Visual documentation research should focus on C4, sequence diagrams, and state diagrams once the implementation plan is settled.
+
+## Open Questions / Next Steps
+
+The next clean prompt chain should explicitly lock down the unresolved system architecture questions instead of continuing broad exploration. The key next steps are to define the final agent set and responsibilities, choose the interaction model, establish output standards, define the source-of-truth and approval lifecycle, determine when validation is mandatory, separate prep-time and live-session workflows, and decide how asset generation should be handled in practice. After that, the design should be translated into GitHub Copilot custom agent definitions and later expressed visually through a structured diagram set suitable for portfolio presentation.
+
+---
