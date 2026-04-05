@@ -3,6 +3,14 @@
 
 ---
 
+## Table of Contents
+
+- **[GitHub guide for new users](https://github.com/newwby/Tabletop-Engine/blob/main/docs/guides/github_primer.md)** - _GitHub issue basics_
+- **[Project reflection docs](https://github.com/newwby/Tabletop-Engine/blob/main/.reflections/.contents.md)** - _personal reflections and decision logic_
+- **[Project context docs](https://github.com/newwby/Tabletop-Engine/blob/main/docs/)** - _agent campaign and development context_
+
+---
+
 ## Overview
 
 This project explores how **software engineering principles** can be applied to tabletop RPG (TTRPG) workflows through a **multi-agent AI system**. This repository is intended first and foremost as a **system design project** utilising GitHub Copilot to orchestrate agent development and narrative content generation. Over time this repository will additionally contain a sample campaign generated with the developed workflow and playtested alongside supporting system deliverables.
