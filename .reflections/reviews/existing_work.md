@@ -1,15 +1,17 @@
-# Reviewing Existing Work Around Multi-Agent Creative / Tabletop Workflows
+# Reviewing Existing Work Around Multi-Agent Creative Systems
 
 - **Date recorded**: 2026-04-05
-- **Last updated**: 2026-04-05
+- **Last updated**: 2026-05-05
 
-- **Problem statement**: This prompt chain explored whether structured multi-agent AI workflows for creative content development, especially tabletop RPG / GM support, already exist in meaningful forms, and how to frame a deeper research pass to verify novelty, comparable systems, and adjacent influences for portfolio positioning.
+This reflection explores whether structured multi-agent AI workflows exist for creative content development, especially tabletop GM/DM support. 
 
 ---
 
 ## Existing projects reviewed
 
-Several projects exploring similar, but not identical, goals were identified. These are undergoing deeper review to confirm the strengths and drawbacks of each approach. These projects often leaned towards session automation with LLM agents, a goal not within the scope of the Tabletop Engine project, but there are insights to be drawn from each approach.
+Several projects exploring similar, but not identical, goals were identified. These implement multi-agent GMing patterns, world/npc decompositions, and utilise extraction tools for source materials.
+
+These are undergoing deeper review to confirm the strengths and drawbacks of each approach. These projects often leaned towards session automation with LLM agents, a goal not within the scope of the Tabletop Engine project, but there are insights to be drawn from each approach.
 
 ### [TRPG Game Mastering Using LLM-Based Multi-Agent System](https://wordplay-workshop.github.io/pdfs/20.pdf)
 _(Yukito Minari, Sei Ueno and Akinobu Lee)_
@@ -36,6 +38,7 @@ The agent strategy and tools (LangChain tools for the D&D 5e API, game mechanics
 
 ### other projects to review
 
+- **[CALYPSO](https://www.cis.upenn.edu/~ccb/publications/calypso-llms-for-dms.pdf)** _(LLMs as Dungeon Masters’ Assistants)_
 - **[Simulacrum](https://github.com/Daxiongmao87/simulacrum-foundry)** _(Campaign Copilot for Foundry Virtual Tabletop supporting OpenAI-compatible API endpoints.)_
 - **[Claude-Code-Game-Master](https://github.com/Sstobo/Claude-Code-Game-Master)** _(Total conversion for Claude Code. Uses RAG and the RPG ruleset apis.)_
 - **[agent-dungeonmaster-langchain](https://github.com/Ghazalehdelfi/agent-dungeonmaster-langchain)** _(LangChain DM assistant for managing tabletop sessions.)_
@@ -59,12 +62,42 @@ The project's key traits include:
 
 This combination is not exactly represented by any project reviewed. The current understanding is that related work exists in neighbouring areas, and adjacent projects do exist, but the particular framing of the problem as a software design problem is comparatively uncommon.
 
+### Common patterns
+
+* Workflow graph or handoff model to coordinate roles
+	* such as an orchestration layer
+* Tool protocol to connect to state/rules/assets
+	* such as model context protocol
+* Supervisor + specialists with a shared (authoritative) state
+* Free-form narrative but mechanics grounded by code/tools
+* Validator agents
+	* can improve adherence/progression
+	* introduce errors and coordination deadlocks
+	* utilise explicit max-iteration caps and mediation logic
+* Campaign continuity
+	* implemented as 'systems + memory' not longer prompts
+	* episodic memory stores
+	* retrieval pipelines
+	* structured state updates stitched together
+
+---
+
+## Conclusion
+
+The project is not necessarily novel in concept, with close matches existing, but the exact implementation does not appear to exist in a mature and documented form. This suggest meaningful space for a system that treats orchestration, state, memory, and validation as software architecture concerns.
+
 ---
 
 ## Further research / links to explore
 
 ### Topics to review
 
+* Orchestration (see [file 1](https://github.com/newwby/Tabletop-Engine/blob/main/.reflections/background/orchestration_1.md) and [file2](https://github.com/newwby/Tabletop-Engine/blob/main/.reflections/background/orchestration_2.md) here)
+* Tool boundaries
+* Agent state _(what agents know/are doing)_
+* Agent retries _(how agents recover)_
+* Agent traceability _(how agents behaved)_
+* Agent governance _(how agents are controlled)_
 * Multi-agent software systems
 * Creative writing tooling
 * Game development tooling pipeliens
@@ -86,7 +119,11 @@ This combination is not exactly represented by any project reviewed. The current
 
 ### Papers to review
 
-* Generative Agents — https://arxiv.org/abs/2304.03442
-* ReAct — https://arxiv.org/abs/2210.03629
-* Procedural narrative generation survey — https://arxiv.org/abs/1907.06424
-
+* **[Generative Agents](https://arxiv.org/abs/2304.03442)**
+* **[ReAct](https://arxiv.org/abs/2210.03629)**
+* **[Procedural narrative generation survey](https://arxiv.org/abs/1907.06424)**
+* **[Static vs. Agentic Game Master AI](https://arxiv.org/pdf/2502.19519)**
+* **[Setting the DC](https://openreview.net/pdf?id=3Op7kJOvaD)** _(Tool‑Grounded D&D Simulations to Test LLM Agents)_
+* **[Towards LLM‑Agents That Play D&D Using Iterative Prompting](https://ceur-ws.org/Vol-4097/paper7.pdf)**
+* **[Constella](https://arxiv.org/abs/2507.05820)**
+* **[Paper Debugger](https://arxiv.org/abs/2512.02589)**
