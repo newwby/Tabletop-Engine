@@ -9,6 +9,9 @@
 
 ## Key concepts
 
+### Portfolio framing
+A likely strong framing for the project was identified as applying multi-agent software architecture principles to real-time creative workflows, specifically tabletop campaign development. The value of the project, from a portfolio perspective, was framed less around claiming total novelty and more around showing deliberate architectural thinking, orchestration, validation, maintainability, and practical human-in-the-loop design in an under-integrated space.
+
 ### Portfolio framing and prompt quality
 The existing Disney campaign prompt chain was judged strong in terms of system thinking, modularity, workflow design, and applying software architecture concepts to tabletop development, but weaker as a portfolio artefact because it read as exploratory rather than decisive. The strongest signal was not the Disney theme itself but the framing of campaign support as a software design problem involving agent roles, validation, workflow control, and reduction of human cognitive load. The recommended approach was not to restart from scratch, but to curate the material into a clearer structure: retain selected exploratory material as evidence of iteration, then add a cleaner final planning chain and reflective commentary explaining how the design matured.
 
