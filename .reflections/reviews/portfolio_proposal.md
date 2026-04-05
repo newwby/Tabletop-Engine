@@ -1,7 +1,7 @@
 # Portfolio Curation and Agentic TTRPG System Planning
-
-- **Date recorded**: 2026-04-05
-- **Last updated**: 2026-04-05
+//TODO
+- **Date recorded**: 04/04/2026
+- **Last updated**: 05/04/2026
 
 **Problem statement**: This prompt chain shifted from exploratory discussion into a more deliberate effort to curate a portfolio-quality planning process for an AI-supported tabletop campaign system, while clarifying what had already been determined, what decisions still needed to be made, and how to frame future prompts in a more professional software-design style.
 
