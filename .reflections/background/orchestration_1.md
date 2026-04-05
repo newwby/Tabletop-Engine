@@ -96,7 +96,7 @@ Composed execution can be achieved by dynamically combining agents via strict st
 
 This manages context, allows parallel tasking, and follows a modular architecture principle.
 
-See [.reflections\agent_orchestration_2.md](https://github.com/newwby/Tabletop-Engine/blob/main/.reflections/orchestration_2.md) for further information ont his approach.
+See [.reflections\agent_orchestration_2.md](https://github.com/newwby/Tabletop-Engine/blob/main/.reflections/background/orchestration_2.md) for further information ont his approach.
 
 ---
 
