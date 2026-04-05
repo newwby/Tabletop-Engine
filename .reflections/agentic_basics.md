@@ -29,6 +29,8 @@ Whilst premature complexity is a hinderance to a project, monolithic ('do everyt
 
 Without logs the system becomes difficult to debug or evaluate. This hinders long-term improvements and production capability. A minimum criteria for effective logging is the abillity to observe the input, prompt, and output.
 
+Logging provides the capability to evaluate the system output and compare model effectiveness to tasks, or measure differences in agent output after changes. Without this functionality the system is essentially operating on guesswork.
+
 ### Spectrum of agency
 Agency was treated as a Lower-agency systems use predefined workflows with some selective decision-making, whilst higher-agency systems attempt more open-ended reasoning and planning.
 
