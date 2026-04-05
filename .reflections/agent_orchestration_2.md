@@ -77,7 +77,9 @@ These are two different mechanisms for multi-agent workflows. Choosing between t
 Subagents: autonomous, isolated, lower context risk, higher setup complexity
 Handoffs: human-paced, context-accumulating, lower setup, familiar UX
 
-### Three Workflow Patterns for VS Code (Architectural Options)
+---
+
+## Architectural Decisions / Options Surfaced
 
 Option A — (VSCode) Full Orchestra
 Conductor + named subagents via runSubagent. Fully automated pipeline. You interact only at plan approval and phase commits. Lowest manual switching, highest setup. Best for sustained development work with quality gates.
@@ -90,7 +92,7 @@ Select the right agent for each discrete task. No orchestration, no pipeline. Pi
 
 ---
 
-## Further reading
+## Further Research / Links to Explore
 
 * github.com/ShepAlderson/copilot-orchestra
 * code.visualstudio.com/docs/copilot/agents/subagents
