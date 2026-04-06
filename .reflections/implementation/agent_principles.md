@@ -38,6 +38,10 @@ Agents should:
 * ask if requirements are unclear _(accounting for this in orchestration)_
 * decline if another agent is more appropriate _(accounting for this in orchestration)_
 
+### Agent Capabilities and Tools
+
+Capabilities/attachments and tools can be customised on a per-agent basis. The functionality and role of each agent should be considered when allowing agent access to the user system, repository, and tools (such as those accessed through MCP).
+
 ### Developer notes
 
 Whilst it would be cleaner to include developer notes inside agent files, they are not reliably isolated from the model even whilst commented out. Comments in Markdown or YAML are still part of the text context and may be read or influence the model; if these comments conflict with instructions they will confuse the model.
