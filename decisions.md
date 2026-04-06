@@ -40,7 +40,7 @@ This document tracks confirmed design decisions for the Tabletop-Engine project.
 **Rationale**: Build pipelines create session deliverables; supports preparation workflows.
 
 ### Event-Driven Extensions
-**Decision**: Defer GitHub Actions integration for post-MVP.
+**Decision**: Defer GitHub Actions and hooks integration for post-MVP.
 
 **Rationale**: Not suitable for MVP complexity; revisit after core orchestration is stable.
 
@@ -122,14 +122,26 @@ This document tracks confirmed design decisions for the Tabletop-Engine project.
 
 **Rationale**: Enables reuse in both Copilot and GitHub Actions without noise or unintended behavior.
 
-### Developer Notes
-**Decision**: Externalize developer notes into a separate developer guide.
+### Agent Orchestration Mechanism
+**Decision**: Use VS Code runSubagent orchestration (Orchestra pattern) over handoffs or manual agent selection.
 
-**Rationale**: Comments in agent files remain part of text context and may confuse the model.
+**Rationale**: 
+- Fully isolated context windows per subagent prevent context pollution across stages
+- Intermediate reasoning is discarded, only final results return to orchestrator
+- Automated pipeline execution with quality gates
+- Best measure for achieving transform pipeline with clearly defined roles
+- Aligns with project goal to determine effective and reproducible multi-agent system
 
-### Agent Types
+**Trade-offs**: 
+- Higher setup complexity compared to handoffs
+- Context isolation means detailed information from previous steps must be explicitly passed
+- Requires conductor agent plus narrow task agents
 
-#### Orchestrator
+**Alternatives Considered**:
+- **Handoffs**: Human-paced, context-accumulating, simpler setup but accumulates context pollution. Better for 2-3 stage flows with deliberate human checkpoints.
+- **Singular Specialist Agents**: Manual selection per task. Simplest to use, best for well-scoped one-shot tasks but no orchestration benefits.
+
+#### Orchestrator implementation
 **Decision**: One orchestrator agent invoked directly by humans.
 
 **Responsibilities**:
@@ -139,7 +151,7 @@ This document tracks confirmed design decisions for the Tabletop-Engine project.
 
 **Note**: Does not produce content directly; manages delegation and integration only.
 
-#### Worker Agents
+#### Worker agent implementation
 **Decision**: Narrow specialist agents with clear bounded authority, non-overlapping mandates.
 
 **Defined Agents**:
@@ -150,15 +162,11 @@ This document tracks confirmed design decisions for the Tabletop-Engine project.
 - **Documentation Agent**: Reviews reflection/campaign docs, readme, devlogs, audit logs
 - **Historian Agent**: Maintains change history record of campaign updates
 
-#### Flat Agents
-**Decision**: Use only for singular-purpose tasks that should not involve multiple agents.
-
-**Constraint**: Not for regular use; only for minor generation tasks.
-
-### MCP Tooling
+#### MCP Tooling
 **Decision**: Utilize MCP servers for campaign data, rule references, storage, retrieval, and generation.
 
 **Rationale**: Enables all agents to access same capabilities without duplicating rules expertise.
+
 
 ---
 
@@ -202,12 +210,33 @@ This document tracks confirmed design decisions for the Tabletop-Engine project.
 
 ---
 
+## Known Issues from Existing Work
+
+### Multi-Agent GM System Risks
+**Decision**: Address three identified failure modes from existing multi-agent GM research:
+
+1. **Misunderstanding rules**: Mitigated by MCP tools for rules-grounding
+2. **Deviating outside existing story/world**: Mitigated by canonical truth validation gates and Continuity Agent
+3. **Giving spoilers to players**: Mitigated by context management and information access controls
+
+**Source**: TRPG Game Mastering Using LLM-Based Multi-Agent System (Minari, Ueno, Lee)
+
+**Rationale**: These are documented failure modes in similar systems; explicit mitigation strategies prevent replication of known issues.
+
+### Latency Concerns
+**Decision**: Deprioritize live session automation for MVP.
+
+**Rationale**: Research shows multi-agent review systems can introduce latency of >1 minute per interaction, unrealistic for live TTRPG play. Focus MVP on preparation deliverables where latency is acceptable.
+
+---
+
 ## Document Status
 
 **Source Files** (marked "Current" as of 06/04/2026):
 - `.reflections/implementation/design_goals.md`
 - `.reflections/implementation/engineering_principles.md`
 - `.reflections/implementation/agent_principles.md`
+- `.reflections/background/orchestration_2.md`
 - `.reflections/reviews/existing_work.md`
 - `.reflections/reviews/agentic_merits.md`
 
