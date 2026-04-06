@@ -1,9 +1,10 @@
 # GitHub Copilot Multi-Agent Orchestration — Subagents vs Handoffs
 
 - **Date recorded**: 05/04/2026
-- **Last updated**: 05/04/2026
+- **Last updated**: 06/04/2026
+- **Status**: Current
 
-Multi-agent workflows solve the problem of context pollution, degraded output/hallucinations, and monolithic single agents. The GitHub Copilot Orchestra workflow promotes an orchestration layer to utilise multiple Copilot agents without manual oversight. 
+Multi-agent workflows solve the problem of context pollution, degraded output/hallucinations, and monolithic single agents. The GitHub Copilot Orchestra workflow promotes an orchestration layer to utilise multiple Copilot agents without manual oversight.
 
 ---
 

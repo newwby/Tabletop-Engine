@@ -1,8 +1,8 @@
-
-# Summary of agentic workflow concerns
+# Summary of agentic workflow concerns and risks
 
 - **Date recorded**: 05/04/2026
-- **Last updated**: 05/04/2026
+- **Last updated**: 06/04/2026
+- **Status**: Current
 
 ## What “agentic” means
 Agentic software is defined as software that can decide its own next steps rather than following only a rigid fixed script.
@@ -28,6 +28,7 @@ In practical terms, this means choosing tasks, gathering context, and performing
 * overestimating achieveability of autonomy
 * striving for high agency systems early
 * using large models where lightweight models will do
+* allowing agents more access than required for their role
 
 ### Modularity over monoliths
 
@@ -43,7 +44,6 @@ Logging provides the capability to evaluate the system output and compare model 
 Agency was treated as a Lower-agency systems use predefined workflows with some selective decision-making, whilst higher-agency systems attempt more open-ended reasoning and planning.
 
 Highly autonomous systems are not a realistic starting point, and a better approach is contrained, reliable, task-specific workflows that gradually introduce limited decision logic.
-
 
 ---
 
