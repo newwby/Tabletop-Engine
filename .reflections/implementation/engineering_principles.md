@@ -63,9 +63,26 @@ Implementation of graceful degradation ensures partial functionality when errors
 
 --- 
 
+## Conclusion
+
+The system is best approached as a modular and controlled (human-supervised) architecture, rather than a loose swarm of autonomous agents or an overengineered distrubuted system.
+
+The final position after review of this document:
+
+* Build as a modular monolith
+* Use orcehstration with specialised subagents
+* Keep strict canonical truth
+* Add validation gates - versioning, logging, and clear contracts for agents/components
+* Keep humans involved in the workflow, especially with canon changes
+* Avoid premature complexity
+* Priortise reliability, traceability, and maintability, over autonomy
+
+---
+
 ## Next steps
 
 ### Todo
+
 * Define the structure of the campaign canonical data model (source of truth)
 * Formalise agent contracts (including input/output schemas and validation expectations)
 * Design orchestrator logic (task routing, failure handling, workflow composition)
