@@ -67,6 +67,12 @@ Therefore, one solution would be to continue experimenting without artificial in
 
 ---
 
+## Conclusion
+
+Agentic workflows reallocate effort toward prompting, orchestration, and review. This can improve structure, parallel progress, and evaluative thinking or judgement - but it can also risk shallow understanding (reducing struggle-based learning) or false productivity. Value largely depends on user oversight, as well as balancing agent-assisted work with independent practice and re-evaluation/testing of generated output.
+
+---
+
 ## Continued Study
 
 ### Links to Explore
