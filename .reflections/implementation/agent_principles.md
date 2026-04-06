@@ -95,7 +95,7 @@ Narrow worker agents are specialists with clear bounded authority, not overlappi
 
 Flat agents are for singular purpose, invoked when a task should not touch multiple agents. This approach should not utilise flat agents regularly, except for minor generation tasks.
 
-* **AgentManager** (agent specialised for creating and managing other agents and instructions, never orchestrated)
+* **AgentManager** (agent specialised for creating and managing other agents and instructions, never orchestrated - this agent can potentially be replaced with inbuilt instruction files)
 
 ### MCP Tooling
 
