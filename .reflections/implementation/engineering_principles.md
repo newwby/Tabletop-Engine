@@ -61,6 +61,22 @@ Several diagram types were considered for different communication goals.
 
 Implementation of graceful degradation ensures partial functionality when errors/failures occur, especially important during live workflow. Optimise for consistent and predictable outputs from the same inputs - this is especially important for any live session workflow, more so than in preparation workflow.
 
+---
+
+## Project Risks and Mitigations
+
+### Applying complex architecture too early
+
+If the system becomes difficult to implement or review it will reduce developer ability to effectively manage development time, and reduce the speed of contributor onboarding.
+
+- **Mitigation**: Maintain project simplicity early-on, avoiding microservices and event-driven architecture. Validate before scaling.
+
+### System complexity over time
+
+If the system becomes difficult to maintain then developer time will become deadlocked by maintability updates and revisions, rather than review and improvement. As complexity rises, maintaining a complete mental model of the project becomes more difficult.
+
+- **Mitigation**: Maintain a modular structure and avoid tight coupling. Refactor regularly, with manual human review, in order to prevent agents from ballooning complexity.
+
 --- 
 
 ## Conclusion
