@@ -18,7 +18,7 @@ This reflection records the design goals of the MVP, as determined from existing
 ### MVP Deliverables
 
 * Narrow task agents managed through an orchestration layer, with defined constraints and roles
-* Formal branching policy, enforced by repo instructions and PR workflows
+* Formal branching policy (enabling rollback/versioning), enforced by repo instructions and PR workflows
 * Global agent instructions, agent usage guidance, and repo-directory specific agent instructions
 * Atomic files to support wiki, fast lookup, and reduced context overload.
 * Atomic schemas per file type (npc/quest/enemy/encounter/location)
@@ -29,6 +29,13 @@ This reflection records the design goals of the MVP, as determined from existing
 * Session log output schema and intake for session recording with standardised post-session schema
 * Observability of campaign changes (historical record)
 * Devlog write-ups from reflection notes, framing 'applying software architecture to tabletop campaign design'
+
+### Future considerations
+
+* Scalability and longevity concerns (canon drift, campaign/wiki expansion)
+* Performance considerations (especially during live sessions)
+* Developer experience (inc. onboarding)
+* Governance and control
 
 ---
 

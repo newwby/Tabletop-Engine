@@ -28,7 +28,17 @@ Shared project context should instead be placed in `.github/copilot-instructions
 
 See [agent_orchestration_1.md](https://github.com/newwby/Tabletop-Engine/blob/main/.reflections/background/orchestration_1.md) for further information ont his approach.
 
-### Developer Notes
+### Basic principles
+
+Agents should:
+* read root `.md` files for project context
+* read files within `/docs/`
+* operate only within its defined responsibility
+* avoid overlapping with other agents
+* ask if requirements are unclear _(accounting for this in orchestration)_
+* decline if another agent is more appropriate _(accounting for this in orchestration)_
+
+### Developer notes
 
 Whilst it would be cleaner to include developer notes inside agent files, they are not reliably isolated from the model even whilst commented out. Comments in Markdown or YAML are still part of the text context and may be read or influence the model; if these comments conflict with instructions they will confuse the model.
 

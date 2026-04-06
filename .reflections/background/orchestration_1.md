@@ -9,7 +9,7 @@ GitHub Copilot web does not allow switching agents mid-task or orchestrating nat
 
 ## Orchestration
 
-When people refer to orchestration, they mean a separate layer deciding which agent or model to call, in what order, and how outputs move between steps.
+_When people refer to orchestration, they mean a separate layer deciding which agent or model to call, in what order, and how outputs move between steps._
 
 Manual orchestration is the simplest and matches the current approach: a human runs one agent, takes its output, and feeds it into the next task or agent.
 

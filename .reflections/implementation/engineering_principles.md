@@ -45,6 +45,16 @@ A canonical source of truth is required to prevent lore drift and inconsistency 
 
 Ensure modularity by abstracting external dependencies (such as models/APIs) behind adapters. Documentation must capture decisions, architecture, agent roles, and workflows - evolving as these requirements change. The system should support rollback, store campaign versions, and workflows should involve consistent branching to prevent loss of history.
 
+### Diagramming and visual system design
+
+Several diagram types were considered for different communication goals.
+
+* Block diagram - best for simple high-level overview
+* Data flow diagram - for illustrating data flow between agents/sources of truth (especially during orchestration)
+* Sequence diagram - for illustrating runtime flow of a specific task
+* State diagram - for modelling approval lifecycle and canon management
+* C4-style - for structure of components
+
 ### Live workflow specific considerations
 **Live workflow is not part of the MVP scope**, however, there are important reliability concerns to consider for this. One such concern is latency of response; multiple agents and validation passes will reduce the effectiveness of reecall.
 
