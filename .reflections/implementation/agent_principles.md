@@ -76,13 +76,16 @@ Narrow worker agents are specialists with clear bounded authority, not overlappi
 
 * **Continuity Agent** (checks canon, world state, unresolved threads, entity consistency)
 * **Prep Agent** (produces session deliverables)
-* **Encounter Agent** (creates encounters and events)
-* **Lore Agent** (record keeper, arc/faction/NPC creator)
-* **Documentation Agent** (reviews docs, readme, devlogs, prompt summaries)
+* **Encounter Agent** (creates arcs/quests, encounters, locations, and events)
+* **Lore Agent** (creates world geography & history, cultures, factions, individual NPCs)
+* **Documentation Agent** (reviews reflection/campaign docs, readme, devlogs, audit logs)
+* **Historian Agent** (keeps change history record of campaign updates, especially relating to canon)
 
 ### Flat
 
 Flat agents are for singular purpose, invoked when a task should not touch multiple agents. This approach should not utilise flat agents regularly, except for minor generation tasks.
+
+* **AgentManager** (agent specialised for creating and managing other agents and instructions, never orchestrated)
 
 ### MCP Tooling
 
@@ -93,3 +96,26 @@ Instead of a rules expert, utilise MCP servers for campaign data, rule reference
 ## Final consideration
 
 The project is not just content generation, it needs to also concern itself with persistence, audibility, and world state. A planner-worker architecture better supports these gaols because it leaves a clearer record of tasks requested, specialists invoked, context utilised, validation, and final output.
+
+### Further scaling multi-agent system performance
+
+**Reviewed from**: https://towardsdatascience.com/why-your-multi-agent-system-is-failing-escaping-the-17x-error-trap-of-the-bag-of-agents/
+
+MAS performance is determined by the interplay of four factors, and the science of scaling suggests that multi-agent systems (MAS) performance is found at the intersection of these:
+
+* **Agent Quantity**: The number of specialised units deployed.
+* **Coordination Structure**: The topology (Centralised, Decentralised, etc.) governing how they interact.
+* **Model Capability**: The baseline intelligence of the underlying LLMs.
+* **Task Properties**: The inherent complexity and requirements of the work.
+
+_If we get the balance wrong we end up scaling noise rather than the results._
+
+---
+
+## References
+
+- **[GitHub Copilot custom instructions](https://docs.github.com/copilot/customizing-copilot/adding-custom-instructions-for-github-copilot)**
+- **[GitHub Copilot custom agents](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/create-custom-agents)**
+-** [GitHub Copilot PR workflows](https://docs.github.com/copilot/using-github-copilot/coding-agent/asking-copilot-to-create-a-pull-request)**
+- **[GitHub prompt storage](https://docs.github.com/en/github-models/use-github-models/storing-prompts-in-github-repositories)**
+

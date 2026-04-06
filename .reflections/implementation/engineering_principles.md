@@ -15,7 +15,7 @@ Approaches considered:
 
 * **Modular monolith over traditional monolith or microservices**; balances simplicity with a clearer separation of concerns than a tightly coupled monolith, without the operational overhead of distributed services.
 * **Orchestration over choreography or single-agent**; utilising structured delegation through subagents and orchestrator task decomposition, avoiding overloading single agents. This improves control and traceability and reduces coordination complexity, preventing context pollution and responsibility confusion.
-* **Pipeline workflow**; highly relevant, tasks are structured as staged transformations through orchestration.
+* **Pipeline workflow**; highly relevant, tasks are structured as staged transformations through orchestration. Build pipelines create session deliverables.
 * **Event-driven extensions (GitHub actions)**; supports the async approach of GitHub Copilot web. Viable for later (decoupled) background processes but introduces complexity early on, not suitable for MVP development.
 
 ### Design Principles
