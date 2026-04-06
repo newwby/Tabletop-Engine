@@ -4,7 +4,7 @@
 - **Last updated**: 06/04/2026
 - **Status**: Current
 
-This reflection records the design goals of the MVP, as determined from existing work and other reflections.
+This reflection records the design goals of the MVP, as determined from existing work and other reflections, as well as development risks not related to agentic development or software engineering principles.
 
 ---
 
@@ -37,6 +37,32 @@ This reflection records the design goals of the MVP, as determined from existing
 * Observability of campaign changes (historical record)
 * Devlog write-ups from reflection notes, framing 'applying software architecture to tabletop campaign design'
 
+---
+
+## Project Risks and Mitigations
+
+### Lack of decisions
+
+Endless exploration without committment will delay project implementation - orchestrated agent workflows can involve additional setup and research.
+
+- **Mitigation**: Utilise decision logs, record reflections to prevent re-reviewing existing work and to force explicit decisions. Time-box exploration to prevent endless exploration.
+
+### Unclear value
+
+If the system cannot meaningfully improve workflow, the additional setup demands would be unwise for reproduction.
+
+- **Mitigation**: Define success criteria early, iterate based on feedback, and test against real use cases. This can take the form o implementing a tabletop system through the MVP of the project and playtesting after MVP delivery. Determining a means of measuring, even qualatively, the effectiveness of running a campaign utilising the project vs without, would provide effective data for proving value.
+
+### Time constriants
+
+If the project grows beyond developer available time it may very well stall.
+
+- **Mitigation**: Prioritise core functionality/MVP, and treat as an iterative project. Cut any non-essential feature early. Maintain repository and contributor guides to support both third-party involvement and return to the project if time demands prevent continued work.
+
+---
+
+## Further development
+
 ### Future considerations
 
 * Scalability and longevity concerns (canon drift, campaign/wiki expansion)
@@ -44,9 +70,7 @@ This reflection records the design goals of the MVP, as determined from existing
 * Developer experience (inc. onboarding)
 * Governance and control
 
----
-
-## Potential post-MVP goals
+### Potential post-MVP goals
 
 **Campaign IDE built around agent workflows**; an analogue to editor-native agent writing systems with deep document state integration and version control, but adapted to campaign bibles, session logs, world graphs etc.
 
