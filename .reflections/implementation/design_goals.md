@@ -8,6 +8,12 @@ This reflection records the design goals of the MVP, as determined from existing
 
 ---
 
+## Project goals
+
+* Determine an effective and reproducable multi-agent system for supporting tabletop DMs.
+
+---
+
 ## MVP goals
 
 * DM preparation as a build process; primer deliverables and wiki structure to support sessions
