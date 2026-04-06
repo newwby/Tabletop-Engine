@@ -113,6 +113,7 @@ See [.reflections\agent_orchestration_2.md](https://github.com/newwby/Tabletop-E
 * LangChain and LangGraph for future orchestration once workflows require stateful, branching, or long-running execution. Does complexity justify introducing an orchestration service?
 * GitHub Actions advanced patterns, including `issue_comment` triggers, workflow dispatch inputs, automated PR suggestions, and PR review APIs.
 * LLM integration within GitHub Actions for scalable validation pipelines.
+* Review [GitHub Hooks](https://www.mintlify.com/github/awesome-copilot/usage/hooks) for workflow automation.
 
 ### Orchestration Services
 
