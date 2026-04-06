@@ -91,6 +91,12 @@ Staged agents connected by handoff buttons. You click to advance each stage. One
 Option C — (Manual) Singular Specialist Agents
 Select the right agent for each discrete task. No orchestration, no pipeline. Pick Code Reviewer, give it the diff. Simplest to use, no context management overhead. Best for well-scoped one-shot tasks.
 
+--- 
+
+## Conclusion
+
+VSCode runAgent orchestration presents the best measure for achieving a transform pipeline whilst utilising agents with a clearly defined role, and removing context pollution. Setup is slower - requiring a conductor, narrow task agents, and quality gates - but a stated goal of this project is to 'determine an effective and reproducable multi-agent system for supporting tabletop DMs'. Once a workflow is determined and documented the setup should be streamlined for future implementation.
+
 ---
 
 ## Further Research / Links to Explore
