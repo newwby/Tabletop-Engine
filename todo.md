@@ -26,10 +26,10 @@ This living document exists as both a guide and record, to track the project's c
 - [ ] Create baseline project board to support cognitive load when returning (Backlog, Ready, In Progress, Review, Done)
 - [ ] Add contribution basics (`CONTRIBUTING.md`) with quickstart guide & issue/PR workflow
 - [ ] Contribution guide for playtesters to explain how to write an issue and GitHub basics
-- [ ] Define branch strategy and protection rules for default branch
 - [ ] Create `.github/copilot-instructions.md` with repo-wide context and policy
-- [ ] Define directory structure for campaign data (`data/`, `canon/`, `sessions/`, `players/`, `assets/`)
+- [ ] Define branch protection rules for default branch
 - [ ] Establish branching policy (`proposal/*`, `session-prep/*`, `repo-maintenance/*`, `asset-briefs/*`)
+- [ ] Define directory structure for campaign data (`data/`, `canon/`, `sessions/`, `players/`, `assets/`)
 
 ### 2. Documentation Review & Alignment
 
