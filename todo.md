@@ -123,10 +123,9 @@ These items require explicit decisions before implementation can proceed:
 - [ ] Set up branches for different major tasks
 - [ ] Determine exit criteria for next phase
 
-### 8. Documentation & Review (repeated phase)
+### 8. Documentation & Review (repeated task)
 
 - [ ] Update README to reflect current system design
-- [ ] Create developer guide for agents (externalized notes)
 - [ ] Write devlog/blog posts for "software architecture applied to tabletop campaign design"
 - [ ] Review and update documentation directory structure if appropriate
 
@@ -192,7 +191,7 @@ These items require explicit decisions before implementation can proceed:
 #### Worker Agents (Priority 3 — Proposal-only)
 - [ ] Determine narrow task agents to support campaign creation
 
-### 2. Schema & Data Model
+### 4. Schema & Data Model
 
 - [ ] Define atomic file schemas for:
   - [ ] NPCs
@@ -206,7 +205,7 @@ These items require explicit decisions before implementation can proceed:
 - [ ] Define session log output schema
 - [ ] Define session primer/compilation schema
 
-### 5. Documentation & Review (repeated phase)
+### 5. Documentation & Review (repeated task)
 
 - [ ] Update README to reflect current system design
 - [ ] Create developer guide for agents (externalized notes)
