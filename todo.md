@@ -118,7 +118,7 @@ These items require explicit decisions before implementation can proceed:
 - [x] Define portfolio deliverables (architecture clarity + working demo + decision history)
 - [x] Define first working prototype milestone
 - [x] Review next steps for MVP progress through /docs/ work and issues created during this milestone
-- [x] Establish MVP to-do list from exploratory work, setup, and update [/docs/working_todo.md](https://github.com/newwby/Tabletop-Engine/blob/main/docs/working_todo.md) as appropriate.
+- [x] Establish MVP to-do list from exploratory work, setup, and update [todo.md](https://github.com/newwby/Tabletop-Engine/blob/main/todo.md) as appropriate.
 - [ ] Set up branches for different major tasks
 - [ ] Determine exit criteria for next phase
 
@@ -130,7 +130,7 @@ These items require explicit decisions before implementation can proceed:
 
 ### 9. Exit Criteria
 
-- [ ] [/docs/working_todo.md](https://github.com/newwby/Tabletop-Engine/blob/main/docs/working_todo.md) is confirmed as baseline and referenced in active workflow
+- [ ] [todo.md](https://github.com/newwby/Tabletop-Engine/blob/main/todo.md) is confirmed as baseline and referenced in active workflow
 - [ ] [/docs/](https://github.com/newwby/Tabletop-Engine/tree/main/docs) files are reviewed and reconciled
 - [ ] Repository setup tasks are complete
 - [ ] Additional non-duplicated tasks are tracked as issues

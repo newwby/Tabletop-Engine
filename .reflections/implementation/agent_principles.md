@@ -61,7 +61,7 @@ A campaign task like “prepare next session” is long-horizon and cross-cuttin
 
 Implement a hierarchical workflow where one top-level agent decides the task shape and specialist agents execute narrow pieces of it. This planner-worker model reduces context bloat and keeps each worker scoped; separating strategic planning from task execution. GitHub Copilot subagents enable this structured delegation.
 
-See [agent_orchestration_2.md](https://github.com/newwby/Tabletop-Engine/blob/main/.reflections/background/orchestration_2.md) for further information ont his approach.
+See [agent_orchestration_2.md](https://github.com/newwby/Tabletop-Engine/blob/main/.reflections/background/orchestration_2.md) for further information on this approach.
 
 ---
 
