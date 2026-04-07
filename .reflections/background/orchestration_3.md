@@ -4,7 +4,7 @@
 - **Last updated**: 06/04/2026
 - **Status**: Draft
 
-This reflection explores the potential of orchcestration services for multi-agent workflows. As sufficient complexity is reached, especially if implementing a software solution for the project in future, existing services would handle orchestration complexity more effectively.
+This reflection explores the potential of orchestration services for multi-agent workflows. As sufficient complexity is reached, especially if implementing a software solution for the project in future, existing services would handle orchestration complexity more effectively.
 
 ---
 

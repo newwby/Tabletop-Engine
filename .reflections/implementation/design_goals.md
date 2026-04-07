@@ -10,7 +10,7 @@ This reflection records the design goals of the MVP, as determined from existing
 
 ## Project goals
 
-* Determine an effective and reproducable multi-agent system for supporting tabletop DMs.
+* Determine an effective and reproducible multi-agent system for supporting tabletop DMs.
 
 ---
 
@@ -32,7 +32,7 @@ This reflection records the design goals of the MVP, as determined from existing
 * Reusable prompts for content generation
 * Structured validation schemas for agents
 * Issue/pr templates for contributors along with GitHub quickstart guide
-* Session primer generation for live workflow (TL;DR, scene flow, relevant file linksand fallback logic)
+* Session primer generation for live workflow (TL;DR, scene flow, relevant file links and fallback logic)
 * Session log output schema and intake for session recording with standardised post-session schema
 * Observability of campaign changes (historical record)
 * Devlog write-ups from reflection notes, framing 'applying software architecture to tabletop campaign design'
@@ -43,7 +43,7 @@ This reflection records the design goals of the MVP, as determined from existing
 
 ### Lack of decisions
 
-Endless exploration without committment will delay project implementation - orchestrated agent workflows can involve additional setup and research.
+Endless exploration without commitment will delay project implementation - orchestrated agent workflows can involve additional setup and research.
 
 - **Mitigation**: Utilise decision logs, record reflections to prevent re-reviewing existing work and to force explicit decisions. Time-box exploration to prevent endless exploration.
 
@@ -53,7 +53,7 @@ If the system cannot meaningfully improve workflow, the additional setup demands
 
 - **Mitigation**: Define success criteria early, iterate based on feedback, and test against real use cases. This can take the form o implementing a tabletop system through the MVP of the project and playtesting after MVP delivery. Determining a means of measuring, even qualatively, the effectiveness of running a campaign utilising the project vs without, would provide effective data for proving value.
 
-### Time constriants
+### Time constraints
 
 If the project grows beyond developer available time it may very well stall.
 

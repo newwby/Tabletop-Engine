@@ -22,7 +22,7 @@ Approaches considered:
 ### Design Principles
 
 * **Human-in-the-loop** - checkpoints required for canonical changes (review/approval stages) and preserving system understanding/control.
-* **Single-repoonsibility** - critical for defining agent boundaries, preventing overlap and ambiguity.
+* **Single-responsibility** - critical for defining agent boundaries, preventing overlap and ambiguity.
 * **Separation of concerns** - distinct handling of generation, validation, session support, etc - through distinct agent specialists.
 * **Design by contract** - clear inputs, outputs, and failure modes per agents - to support reliability and testability.
 * **YAGNI (you aren't going to need it)** - features implemented as needs demand them, avoiding contributor work drift. Important for premature complexity in autonomous systems.
@@ -33,7 +33,7 @@ Approaches considered:
 ## System Reliability
 
 ### Observability
-Observability and audibility, through logging/tracing/trails, supports debugging and system trust. Error handling can support this further by distinguishing between model/tool failure, invalid output, and canon conflicts.
+Observability and auditability, through logging/tracing/trails, supports debugging and system trust. Error handling can support this further by distinguishing between model/tool failure, invalid output, and canon conflicts.
 
 Observability can be supported by unit testing - isolating tool choice, file updates, prompts, etc. This is especially important if models change over time. Evaluation harnesses can support comparison of system iterations.
 

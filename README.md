@@ -11,7 +11,7 @@
 - **[Contribution guide](https://github.com/newwby/Tabletop-Engine/blob/main/CONTRIBUTING.md)** - _Guide for contributors to the project._
 - **[Project context docs](https://github.com/newwby/Tabletop-Engine/blob/main/docs/)** - _agent campaign and development context_
 - **[Project reflection docs](https://github.com/newwby/Tabletop-Engine/blob/main/.reflections/.contents.md)** - _personal reflections and decision logic_
-- **[Devlogs](https://github.com/newwby/Tabletop-Engine/blob/main/.reflections/devlogs/)** - _(WIP) directory containing record of devlogs for the project._
+- **[Devlogs](https://github.com/newwby/Tabletop-Engine/blob/main/.reflections/.devlogs/)** - _(WIP) directory containing record of devlogs for the project._
 
 
 ---

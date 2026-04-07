@@ -36,29 +36,28 @@ This living document exists as both a guide and record, to track the project's c
 - [x] _Document the phase 0 setup progress (ongoing)_
 - [x] Review exploratory prompts and document initial process
 - [x] Review all files in [/docs/](https://github.com/newwby/Tabletop-Engine/tree/main/docs)
-- [x] Compare [/docs/working_todo.md](https://github.com/newwby/Tabletop-Engine/blob/main/docs/working_todo.md) against current project intent and update it as needed
+- [x] Compare [todo.md](https://github.com/newwby/Tabletop-Engine/blob/main/todo.md) against current project intent and update it as needed
 - [x] Ensure project README reflects current project truth and links key docs clearly
 - [ ] Convert actionable doc items into tracked GitHub issues
 - [ ] Confirm documentation ownership/update expectations for future updates
 
-### 3. Update [/docs/working_todo.md](https://github.com/newwby/Tabletop-Engine/blob/main/docs/working_todo.md) to address active priorities
+### 3. Update [todo.md](https://github.com/newwby/Tabletop-Engine/blob/main/todo.md) to address active priorities
 
-- [x] Continue progress on MVP/Core Direction items listed in [/docs/working_todo.md](https://github.com/newwby/Tabletop-Engine/blob/main/docs/working_todo.md)
-- [x] Continue progress on Architecture Decisions listed in [/docs/working_todo.md](https://github.com/newwby/Tabletop-Engine/blob/main/docs/working_todo.md)
-- [x] Continue progress on Agents and Workflow Design listed in [/docs/working_todo.md
-](https://github.com/newwby/Tabletop-Engine/blob/main/docs/working_todo.md)
+- [x] Continue progress on MVP/Core Direction items listed in [todo.md](https://github.com/newwby/Tabletop-Engine/blob/main/todo.md)
+- [x] Continue progress on Architecture Decisions listed in [todo.md](https://github.com/newwby/Tabletop-Engine/blob/main/todo.md)
+- [x] Continue progress on Agents and Workflow Design listed in [todo.md](https://github.com/newwby/Tabletop-Engine/blob/main/todo.md)
 
 
 ### 4. Research and Planning
 
 - [x] Review outcome of step 3 (working files in /docs/) for completeness and decisions to be made
-  - [x] Review [/docs/previous_exploration.md](https://github.com/newwby/Tabletop-Engine/blob/main/docs/previous_exploration.md)
-  - [x] Reivew [/docs/research_direction]([development_direction.md](https://github.com/newwby/Tabletop-Engine/blob/main/docs/development_direction.md))
+  - [x] Review [`.reflections/reviews/initial_exploration.md`](https://github.com/newwby/Tabletop-Engine/blob/main/.reflections/reviews/initial_exploration.md)
+  - [x] Review [`docs/development_direction.md`](https://github.com/newwby/Tabletop-Engine/blob/main/docs/development_direction.md)
 - [ ] Investigate MCP projects for DND 5e referencing
   - https://github.com/procload/dnd-mcp
   - https://mcpservers.org/servers/heffrey78/dnd-mcp
 - [ ] Review/revise campaign documents for IP considerations
-- [x] Determine architectural decisons and relevant engineering principles for MVP
+- [x] Determine architectural decisions and relevant engineering principles for MVP
 
 #### MVP / Core Direction
 - [x] Define MVP scope; minimum viable version of the system

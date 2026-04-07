@@ -26,7 +26,7 @@ Agent files should remain modular and task-specific, avoiding inclusion of repo-
 
 Shared project context should instead be placed in `.github/copilot-instructions.md`. Adhering to this enables agent files to be reused both in Copilot and in GitHub Actions without introducing noise or unintended behaviour.
 
-See [agent_orchestration_1.md](https://github.com/newwby/Tabletop-Engine/blob/main/.reflections/background/orchestration_1.md) for further information ont his approach.
+See [agent_orchestration_1.md](https://github.com/newwby/Tabletop-Engine/blob/main/.reflections/background/orchestration_1.md) for further information on this approach.
 
 ### Basic principles
 
@@ -109,7 +109,7 @@ Instead of a rules expert, utilise MCP servers for campaign data, rule reference
 
 ## Final consideration
 
-The project is not just content generation, it needs to also concern itself with persistence, audibility, and world state. A planner-worker architecture better supports these gaols because it leaves a clearer record of tasks requested, specialists invoked, context utilised, validation, and final output.
+The project is not just content generation, it needs to also concern itself with persistence, auditability, and world state. A planner-worker architecture better supports these gaols because it leaves a clearer record of tasks requested, specialists invoked, context utilised, validation, and final output.
 
 ### Further scaling multi-agent system performance
 
@@ -130,6 +130,6 @@ _If we get the balance wrong we end up scaling noise rather than the results._
 
 - **[GitHub Copilot custom instructions](https://docs.github.com/copilot/customizing-copilot/adding-custom-instructions-for-github-copilot)**
 - **[GitHub Copilot custom agents](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/create-custom-agents)**
--** [GitHub Copilot PR workflows](https://docs.github.com/copilot/using-github-copilot/coding-agent/asking-copilot-to-create-a-pull-request)**
+- **[GitHub Copilot PR workflows](https://docs.github.com/copilot/using-github-copilot/coding-agent/asking-copilot-to-create-a-pull-request)**
 - **[GitHub prompt storage](https://docs.github.com/en/github-models/use-github-models/storing-prompts-in-github-repositories)**
 

@@ -25,7 +25,7 @@ In practical terms, this means choosing tasks, gathering context, and performing
 
 Too many agents, features, or systems introduced early. An overly complex system produces unpredictable results. Lower-agency systems use predefined workflows with some selective decision-making, whilst higher-agency systems attempt more open-ended reasoning and planning.
 
-- **Mitigation**: Define a strict MVP. Limit the initial agent set, with incremental feature addition, and avoid the overuse of agents for simple tasks or overestimating autonomous achievability early. Do not strive for high agency initially, i.e. avoid development complexity at first; strive for proof of concept first and then an MVP. Highly autonomous systems are not a realistic starting point, and a better approach is contrained, reliable, task-specific workflows that gradually introduce limited decision logic.
+- **Mitigation**: Define a strict MVP. Limit the initial agent set, with incremental feature addition, and avoid the overuse of agents for simple tasks or overestimating autonomous achievability early. Do not strive for high agency initially, i.e. avoid development complexity at first; strive for proof of concept first and then an MVP. Highly autonomous systems are not a realistic starting point, and a better approach is constrained, reliable, task-specific workflows that gradually introduce limited decision logic.
 
 ### Agent overlap
 
@@ -43,7 +43,7 @@ Agents produce inconsistent or incorrect results, or produce unexpected results 
 
 Without logs the system becomes difficult to debug or evaluate. This hinders long-term improvements and production capability.
 
-- **Mitigation**: Introduce validation layer early, with logging/observability and utilising an editor/validator agent. Logging provides the capability to evaluate the system output and compare model effectiveness to tasks, or measure differences in agent output after changes. Without this functionality the system is essentially operating on guesswork. A minimum criteria for effective logging is the abillity to observe the input, prompt, and output.
+- **Mitigation**: Introduce validation layer early, with logging/observability and utilising an editor/validator agent. Logging provides the capability to evaluate the system output and compare model effectiveness to tasks, or measure differences in agent output after changes. Without this functionality the system is essentially operating on guesswork. A minimum criteria for effective logging is the ability to observe the input, prompt, and output.
 
 ### Monolithic agents
 
