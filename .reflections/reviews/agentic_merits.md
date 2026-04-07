@@ -1,18 +1,18 @@
-# Project learning evaluation as a reflective blog subject
+# Merits of agentic workflows
 
 - **Date recorded**: 05/04/2026
-- **Last updated**: 05/04/2026
+- **Last updated**: 06/04/2026
+- **Status**: Current
 
 This reflection covered the potential of the project, investigating agentic development to build a tabletop campaign, as study and blog material. It then expands into my personal observed benefits, maps to known research, and means to critically evaluate without harming learning depth.
 
-## Anecdotal analysis
+## Project learning evaluation as a reflective blog subject
 
 ### Themes for reflection
 
 Agentic development was framed as a meaningful topic for reflective writing because it changes where effort sits in the development process.
 
 Agent development appears to shift work toward prompt design, task structuring, orchestration, review, evaluation, and iterative refinement. Research in the field suggests that developers overestimate their productivity gains utilising agents for development, supporting the hypothesis that it changes where the work lays.
-
 
 ### Benefits
 
@@ -64,6 +64,12 @@ Therefore, one solution would be to continue experimenting without artificial in
 ### Terms
 * **Struggle depth** is the learning that happens when you get stuck long enough to build mental models, instinct, and edge-case intuition.
 * **Illusion of understanding** refers to being able to recognise, follow, and review solutions without being capable of deriving or reconstructing them.
+
+---
+
+## Conclusion
+
+Agentic workflows reallocate effort toward prompting, orchestration, and review. This can improve structure, parallel progress, and evaluative thinking or judgement - but it can also risk shallow understanding (reducing struggle-based learning) or false productivity. Value largely depends on user oversight, as well as balancing agent-assisted work with independent practice and re-evaluation/testing of generated output.
 
 ---
 

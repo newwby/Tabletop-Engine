@@ -1,7 +1,8 @@
 # GitHub Copilot Multi-Agent Orchestration - Execution Wrappers vs GitHub Actions
 
-- **Date recorded**: 05/04/2026
-- **Last updated**: 05/04/2026
+- **Date recorded**: 04/04/2026
+- **Last updated**: 06/04/2026
+- **Status**: Historic
 
 GitHub Copilot web does not allow switching agents mid-task or orchestrating natively. This reflection explores alternative approaches to orchestrate multi-agent workflows.
 
@@ -9,7 +10,7 @@ GitHub Copilot web does not allow switching agents mid-task or orchestrating nat
 
 ## Orchestration
 
-When people refer to orchestration, they mean a separate layer deciding which agent or model to call, in what order, and how outputs move between steps.
+_When people refer to orchestration, they mean a separate layer deciding which agent or model to call, in what order, and how outputs move between steps._
 
 Manual orchestration is the simplest and matches the current approach: a human runs one agent, takes its output, and feeds it into the next task or agent.
 
@@ -96,11 +97,11 @@ Composed execution can be achieved by dynamically combining agents via strict st
 
 This manages context, allows parallel tasking, and follows a modular architecture principle.
 
-See [.reflections\agent_orchestration_2.md](https://github.com/newwby/Tabletop-Engine/blob/main/.reflections/orchestration_2.md) for further information ont his approach.
+See [.reflections\agent_orchestration_2.md](https://github.com/newwby/Tabletop-Engine/blob/main/.reflections/background/orchestration_2.md) for further information ont his approach.
 
 ---
 
-## Architectural Decisions / Options Surfaced
+## Architectural Decisions
 
 1. A monolithic agent approach was rejected due to scalability issues and lack of transparency in failure points.
 2. Manual orchestration was identified as functional but too high-friction for frequent use.
@@ -110,22 +111,6 @@ See [.reflections\agent_orchestration_2.md](https://github.com/newwby/Tabletop-E
 
 ## Further Research / Links to Explore
 
-* LangChain and LangGraph for future orchestration once workflows require stateful, branching, or long-running execution. Does complexity justify introducing an orchestration service?
 * GitHub Actions advanced patterns, including `issue_comment` triggers, workflow dispatch inputs, automated PR suggestions, and PR review APIs.
 * LLM integration within GitHub Actions for scalable validation pipelines.
-
-### Orchestration Services
-
-LangChain and LangGraph were surfaced as deeper workflow options, with LangGraph noted as the better fit for deterministic multi-step flows.
-
-**see**: https://docs.langchain.com/oss/python/langchain/quickstart
-**see**: https://www.geeksforgeeks.org/artificial-intelligence/langchain-vs-langgraph/
-
-Microsoft Semantic Kernel was identified as structurally aligned with the Copilot ecosystem and useful for planners, skills, and orchestration logic.
-
-**see**: https://devblogs.microsoft.com/agent-framework/semantic-kernel-multi-agent-orchestration/
-
-AutoGen was noted as the option closest to true multi-agent collaboration because it supports orchestrated agent-to-agent interactions through an external coordination layer.
-
-**see**: https://microsoft.github.io/autogen/stable//user-guide/core-user-guide/design-patterns/mixture-of-agents.html
-
+* Review [GitHub Hooks](https://www.mintlify.com/github/awesome-copilot/usage/hooks) for workflow automation.

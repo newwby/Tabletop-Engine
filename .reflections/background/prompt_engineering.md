@@ -1,7 +1,8 @@
 # An introduction to Prompt Engineering
 
 - **Date recorded**: 05/04/2026
-- **Last updated**: 05/04/2026
+- **Last updated**: 06/04/2026
+- **Status**: Current
 
 This reflection explores structuring task prompts in order to optimise for clearer and constrained outputs that are more useful on the first pass.
 
