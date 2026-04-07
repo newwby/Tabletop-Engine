@@ -24,8 +24,8 @@ This living document exists as both a guide and record, to track the project's c
 - [ ] Define issue template set (Architecture Decision, Agent Definition, Agent Review, Task/Feature, Bug, Research/Exploration)
 - [ ] Add PR template aligned to project goals (scope, decision impact, validation, docs updates)
 - [ ] Create baseline project board to support cognitive load when returning (Backlog, Ready, In Progress, Review, Done)
-- [ ] Add contribution basics (`CONTRIBUTING.md`) with quickstart guide & issue/PR workflow
-- [ ] Contribution guide for playtesters to explain how to write an issue and GitHub basics
+- [X] Add contribution basics (`CONTRIBUTING.md`) with quickstart guide & issue/PR workflow
+- [X] Contribution guide for playtesters to explain how to write an issue and GitHub basics
 - [ ] Create `.github/copilot-instructions.md` with repo-wide context and policy
 - [ ] Define branch protection rules for default branch
 - [ ] Establish branching policy (`proposal/*`, `session-prep/*`, `repo-maintenance/*`, `asset-briefs/*`)
