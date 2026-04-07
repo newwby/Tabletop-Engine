@@ -30,5 +30,5 @@ Microsoft Semantic Kernel was identified as structurally aligned with the Copilo
 
 AutoGen was noted as the option closest to true multi-agent collaboration because it supports orchestrated agent-to-agent interactions through an external coordination layer.
 
-**see**: https://microsoft.github.io/autogen/stable//user-guide/core-user-guide/design-patterns/mixture-of-agents.html
+**see**: https://microsoft.github.io/autogen/stable/user-guide/core-user-guide/design-patterns/mixture-of-agents.html
 
