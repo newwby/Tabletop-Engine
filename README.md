@@ -5,10 +5,14 @@
 
 ## Table of Contents
 
-- **[Architectural Decisions](https://github.com/newwby/Tabletop-Engine/blob/main/decisions.md)** - _confirmed design decisions_
-- **[GitHub guide for new users](https://github.com/newwby/Tabletop-Engine/blob/main/docs/guides/github_primer.md)** - _GitHub issue basics_
-- **[Project reflection docs](https://github.com/newwby/Tabletop-Engine/blob/main/.reflections/.contents.md)** - _personal reflections and decision logic_
+- **[Working to-do list](https://github.com/newwby/Tabletop-Engine/blob/main/todo.md)** - _living document, broadly covers tasks for each phase._
+- **[Architectural Decisions](https://github.com/newwby/Tabletop-Engine/blob/main/decisions.md)** - _Details confirmed design decisions and rationale._
+- **[GitHub guide for new users](https://github.com/newwby/Tabletop-Engine/blob/main/docs/guides/github_primer.md)** - _GitHub repository structure/issue basics, for non-technical contributors._
+- **[Contribution guide](https://github.com/newwby/Tabletop-Engine/blob/main/CONTRIBUTING.md)** - _Guide for contributors to the project._
 - **[Project context docs](https://github.com/newwby/Tabletop-Engine/blob/main/docs/)** - _agent campaign and development context_
+- **[Project reflection docs](https://github.com/newwby/Tabletop-Engine/blob/main/.reflections/.contents.md)** - _personal reflections and decision logic_
+- **[Devlogs](https://github.com/newwby/Tabletop-Engine/blob/main/.reflections/devlogs/)** - _(WIP) directory containing record of devlogs for the project._
+
 
 ---
 
