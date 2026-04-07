@@ -44,7 +44,7 @@ The agent strategy and tools (LangChain tools for the D&D 5e API, game mechanics
 - **[Claude-Code-Game-Master](https://github.com/Sstobo/Claude-Code-Game-Master)** _(Total conversion for Claude Code. Uses RAG and the RPG ruleset apis.)_
 - **[agent-dungeonmaster-langchain](https://github.com/Ghazalehdelfi/agent-dungeonmaster-langchain)** _(LangChain DM assistant for managing tabletop sessions.)_
 - **[EverTavern](https://kzfubar.com/blog/evertavern)** _(persistent NPC as a live Discord character)_
-- **[Friends & Fables](https://fables.gg/)** _(commerical product)_
+- **[Friends & Fables](https://fables.gg/)** _(commercial product)_
 - **[DM Co‑Pilot](https://github.com/Cmccombs01/DM-Copilot-App/blob/main/README.md)** _(open-source app)_
 - **[mnehmos.rpg.mcp](https://github.com/Mnehmos/rpg-mcp)** _(MCP server for rules-grounded play)_
 - **[AI dungeon](https://aidungeon.com/)** _(A text-based adventure-story game run by AI.)_
