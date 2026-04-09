@@ -72,6 +72,10 @@ If the project grows beyond developer available time it may very well stall.
 
 ### Potential post-MVP goals
 
+**Generated wiki documenting relationships between atomic files & narrative structure**
+
+**Application companion (lightweight) mobile app for pulling information from server-hosted campaign docs quickly through natural language search interface, or providing updates during a session**
+
 **Campaign IDE built around agent workflows**; an analogue to editor-native agent writing systems with deep document state integration and version control, but adapted to campaign bibles, session logs, world graphs etc.
 
 **Reliable live-session prompting**; research indicates multi-agent loops harm conversational smoothness. Deterministic orchestration (with latency budgets, retry strategies, single-agent degradation) could support effortless AI companions for tabletop DMs. 
