@@ -16,9 +16,9 @@ body:
       options:
         - System workflow
         - Campaign generation/output
-        - Agent behaviour
+        - Agent behaviour (indicate which in summary)
         - Documentation/process
-        - Other
+        - Other (please indicate in summary)
     validations:
       required: true
 
@@ -34,6 +34,7 @@ body:
     id: expected
     attributes:
       label: Expected behaviour
+      placeholder: What is supposed to happen?
     validations:
       required: true
 
@@ -41,6 +42,7 @@ body:
     id: actual
     attributes:
       label: Actual behaviour
+      placeholder: What went wrong? Optionally include any additional context, screenshots, or links.
     validations:
       required: true
 
@@ -48,7 +50,7 @@ body:
     id: steps
     attributes:
       label: Steps to reproduce (optional)
-      description: If known, list simple steps.
+      description: If known, list simple steps, otherwise leave blank.
       placeholder: |
         1. ...
         2. ...
@@ -59,19 +61,10 @@ body:
     attributes:
       label: Impact
       options:
+        - Unassigned (refer to dev)
         - Low (minor annoyance)
         - Medium (blocks part of workflow)
         - High (major blocker)
     validations:
       required: true
 
-  - type: input
-    id: agent
-    attributes:
-      label: Agent involved (optional)
-      placeholder: e.g. Prep Agent, Historian Agent
-
-  - type: textarea
-    id: references
-    attributes:
-      label: Additional context, screenshots, or links (optional)
