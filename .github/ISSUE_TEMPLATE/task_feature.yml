@@ -1,0 +1,65 @@
+name: Task / Feature
+description: Suggest a workflow, system, or campaign improvement.
+title: "[Task/Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the suggestion. Keep this lightweight—plain language is welcome.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: What area does this relate to?
+      options:
+        - System workflow
+        - Campaign generation/output
+        - Agent behaviour
+        - Documentation/process
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: summary
+    attributes:
+      label: What would you like to improve?
+      placeholder: Short summary of the change
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: Describe the pain point or missed outcome.
+      placeholder: What is difficult today?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Suggested change (optional)
+      description: If you already have an idea, share it. If not, leave blank.
+
+  - type: textarea
+    id: success
+    attributes:
+      label: What would success look like?
+      description: Keep this simple and practical.
+      placeholder: What should be true after this is done?
+
+  - type: input
+    id: agent
+    attributes:
+      label: Agent involved (optional)
+      placeholder: e.g. Orchestrator, Continuity Agent
+
+  - type: textarea
+    id: references
+    attributes:
+      label: Additional context or links (optional)
+      placeholder: Related issue/PR/docs links

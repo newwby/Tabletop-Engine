@@ -1,0 +1,77 @@
+name: Bug / Unexpected Behaviour
+description: Report behaviour that differs from expectations.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report. Non-technical descriptions are completely fine.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: What area is affected?
+      options:
+        - System workflow
+        - Campaign generation/output
+        - Agent behaviour
+        - Documentation/process
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: summary
+    attributes:
+      label: Short summary
+      placeholder: What went wrong?
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behaviour
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce (optional)
+      description: If known, list simple steps.
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Impact
+      options:
+        - Low (minor annoyance)
+        - Medium (blocks part of workflow)
+        - High (major blocker)
+    validations:
+      required: true
+
+  - type: input
+    id: agent
+    attributes:
+      label: Agent involved (optional)
+      placeholder: e.g. Prep Agent, Historian Agent
+
+  - type: textarea
+    id: references
+    attributes:
+      label: Additional context, screenshots, or links (optional)
