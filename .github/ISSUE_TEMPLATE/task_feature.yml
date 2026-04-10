@@ -14,11 +14,11 @@ body:
     attributes:
       label: What area does this relate to?
       options:
-        - System workflow
-        - Campaign generation/output
-        - Agent behaviour
-        - Documentation/process
-        - Other
+        - System/workflow
+        - Campaign
+        - Agent (please indicate in summary)
+        - Documentation
+        - Other (please indicate in summary)
     validations:
       required: true
 
@@ -26,7 +26,7 @@ body:
     id: summary
     attributes:
       label: What would you like to improve?
-      placeholder: Short summary of the change
+      placeholder: Summarise change in brief here; If not, leave blank. If you have additional context or links, provide them here.
     validations:
       required: true
 
@@ -35,15 +35,9 @@ body:
     attributes:
       label: What problem does this solve?
       description: Describe the pain point or missed outcome.
-      placeholder: What is difficult today?
+      placeholder: What is not working as you'd like?
     validations:
       required: true
-
-  - type: textarea
-    id: proposal
-    attributes:
-      label: Suggested change (optional)
-      description: If you already have an idea, share it. If not, leave blank.
 
   - type: textarea
     id: success
@@ -51,15 +45,3 @@ body:
       label: What would success look like?
       description: Keep this simple and practical.
       placeholder: What should be true after this is done?
-
-  - type: input
-    id: agent
-    attributes:
-      label: Agent involved (optional)
-      placeholder: e.g. Orchestrator, Continuity Agent
-
-  - type: textarea
-    id: references
-    attributes:
-      label: Additional context or links (optional)
-      placeholder: Related issue/PR/docs links
