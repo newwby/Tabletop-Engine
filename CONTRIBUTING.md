@@ -1,15 +1,30 @@
-# Contributing to Tabletop Engine
+# Tabletop Engine Contribution Guide
 
-This project is in early development. Most contribution guidelines, workflows, and processes are not yet finalized.
+This project is in early development. Any clarifications required should be directed to [@newwby](https://github.com/newwby).
 
-## Current Status
+1. [Current Status](CONTRIBUTING.md#current-status)
+2. [How to Contribute](CONTRIBUTING.md#contributing)
+3. [Development Principles](CONTRIBUTING.md#devprinciples)
+4. [Branch Strategy](CONTRIBUTING.md#branchstrategy)
+5. [Branch Protection](CONTRIBUTING.md#branchprotection)
 
-The project is focused on establishing:
+---
+
+<h2 id="current-status">Current Status</h2>
+
+**The project is focused on establishing:**
 - Core architecture and agent orchestration
 - MVP deliverables (see [design goals](.reflections/implementation/design_goals.md))
 - Engineering principles and patterns (see [decisions.md](decisions.md))
 
-## How to Contribute (for now)
+**The purpose of this project is to reduce DM cognitive load and preparation time by:**
+- Streamlining content generation whilst preserving human involvement
+- Creating easily accessed and organised reference files
+- Producing deliverables to support running a session
+
+---
+
+<h2 id="contributing">How to Contribute</h2>
 
 ### Reporting Issues
 - Check existing issues first to avoid duplicates
@@ -18,12 +33,18 @@ The project is focused on establishing:
 
 ### Questions and Discussion
 - Use GitHub issues for questions about the project
+- Use the **Discussions** tab for lightweight, lower-detail conversations that do not need issue tracking
+- Use issues when work should be tracked with clear actions or follow-up
 - See the [GitHub primer](docs/guides/github_primer.md) if new to GitHub
 
-### Code Contributions
+### Contributions
 Since the architecture is still being defined, please **open an issue first** before investing significant work. This helps ensure alignment with project direction.
 
-## Development Principles
+Once your goal is clarified and you are ready to begin work, follow branch strategy rules and create a working branch.
+
+---
+
+<h2 id="devprinciples">Development Principles</h2>
 
 The project follows established software engineering principles:
 - **YAGNI** - features implemented as needs demand them
@@ -32,14 +53,21 @@ The project follows established software engineering principles:
 
 See [engineering principles](.reflections/implementation/engineering_principles.md) for details.
 
-## What's Coming
-
-Formal contribution processes will be established as the project matures:
-- Issue and PR templates
-- Branching policy and workflows
-- Code review guidelines
-- Agent development standards
-
 ---
 
-**Note**: This guide will be updated as decisions are made and the project structure solidifies.
+# Branch Rules
+
+<h2 id="branchstrategy">Branch Strategy</h2>
+
+1. `main` is the default branch and should always remain stable and presentable.
+2. Direct commits to `main` are not permitted.
+3. New work is completed in short-lived branches.
+4. Changes to `main` must go through a pull request.
+5. Before merging a pull request, the working branch should be updated with the latest `main` to reduce merge conflicts.
+
+<h2 id="branchprotection">Branch Protection</h2>
+
+1. Prevent direct pushes and force pushes to `main`.
+2. Require pull requests for changes merged into `main`.
+3. Merging without review is permitted initially, but approvals should be implemented once additional contributors join the project.
+4. No required status checks are enabled at this stage. Markdown linting and related documentation checks can be introduced after MVP.
