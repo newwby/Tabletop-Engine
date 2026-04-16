@@ -32,11 +32,25 @@ The project follows established software engineering principles:
 
 See [engineering principles](.reflections/implementation/engineering_principles.md) for details.
 
+## Branch Strategy
+
+1. `main` is the default branch and should always remain stable and presentable.
+2. Direct commits to `main` are not permitted.
+3. New work is completed in short-lived branches.
+4. Changes to `main` must go through a pull request.
+5. Before merging a pull request, the working branch should be updated with the latest `main` to reduce merge conflicts.
+
+## Branch Protection
+
+1. Prevent direct pushes and force pushes to `main`.
+2. Require pull requests for changes merged into `main`.
+3. Merging without review is permitted initially, but approvals should be implemented once additional contributors join the project.
+4. No required status checks are enabled at this stage. Markdown linting and related documentation checks can be introduced after MVP.
+
 ## What's Coming
 
 Formal contribution processes will be established as the project matures:
 - Issue and PR templates
-- Branching policy and workflows
 - Code review guidelines
 - Agent development standards
 
