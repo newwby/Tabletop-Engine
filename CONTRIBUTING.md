@@ -46,14 +46,3 @@ See [engineering principles](.reflections/implementation/engineering_principles.
 2. Require pull requests for changes merged into `main`.
 3. Merging without review is permitted initially, but approvals should be implemented once additional contributors join the project.
 4. No required status checks are enabled at this stage. Markdown linting and related documentation checks can be introduced after MVP.
-
-## What's Coming
-
-Formal contribution processes will be established as the project matures:
-- Issue and PR templates
-- Code review guidelines
-- Agent development standards
-
----
-
-**Note**: This guide will be updated as decisions are made and the project structure solidifies.
