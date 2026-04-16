@@ -18,6 +18,8 @@ The project is focused on establishing:
 
 ### Questions and Discussion
 - Use GitHub issues for questions about the project
+- Use the **Discussions** tab for lightweight, lower-detail conversations that do not need issue tracking
+- Use issues when work should be tracked with clear actions or follow-up
 - See the [GitHub primer](docs/guides/github_primer.md) if new to GitHub
 
 ### Code Contributions
