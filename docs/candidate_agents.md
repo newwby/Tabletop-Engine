@@ -7,6 +7,16 @@
 This is a working list of candidate agents.  
 Not all will be included in MVP.
 
+## Contents
+
+- [Core System Agents](#core-system-agents)
+- [Content Agents](#content-agents)
+- [Asset Agents](#asset-agents)
+- [Runtime Agents](#runtime-agents)
+- [Persistence Agents](#persistence-agents)
+- [Support Agents](#support-agents)
+- [Notes](#notes)
+
 ---
 
 ## Core System Agents

@@ -8,6 +8,15 @@ This reflection records the design goals of the MVP, as determined from existing
 
 ---
 
+## Contents
+
+- [Project goals](#project-goals)
+- [MVP goals](#mvp-goals)
+- [Project Risks and Mitigations](#project-risks-and-mitigations)
+- [Further development](#further-development)
+
+---
+
 ## Project goals
 
 * Determine an effective and reproducible multi-agent system for supporting tabletop DMs.

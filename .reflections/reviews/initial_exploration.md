@@ -16,6 +16,15 @@ Records an exploratory conversation about using a structured repository and mult
 
 ---
 
+## Contents
+
+- [Key Concepts](#key-concepts)
+- [Architectural Decisions / Options Surfaced](#architectural-decisions-options-surfaced)
+- [Further Research / Links to Explore](#further-research-links-to-explore)
+- [Open Questions / Next Steps](#open-questions-next-steps)
+
+---
+
 ## Key Concepts
 
 ### Campaign as a Software System  

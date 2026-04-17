@@ -8,6 +8,15 @@ This reflection explores whether structured multi-agent AI workflows exist for c
 
 ---
 
+## Contents
+
+- [Existing projects reviewed](#existing-projects-reviewed)
+- [Key concepts determined](#key-concepts-determined)
+- [Conclusion](#conclusion)
+- [Further research / links to explore](#further-research-links-to-explore)
+
+---
+
 ## Existing projects reviewed
 
 Several projects exploring similar, but not identical, goals were identified. These implement multi-agent GMing patterns, world/npc decompositions, and utilise extraction tools for source materials.

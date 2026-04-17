@@ -7,11 +7,11 @@ This living document exists as both a guide and record, to track the project's c
 
 ---
 
-# Table of Contents
+## Contents
 
 - [Phase 0 - Setup and Research](#phase-0-setup-phase)
-- [Phase 1 - MVP Implementation Phase](#phase-1---mvp-implementation-phase)
-- [Phase 2 - Iterative Campaign Phase](#phase-2---iterative-campaign-phase) _(WIP)_
+- [Phase 1 - MVP Implementation Phase](#phase-1-mvp-implementation-phase)
+- [Phase 2 - Iterative Campaign Phase](#phase-2-iterative-campaign-phase) _(WIP)_
 
 ---
 

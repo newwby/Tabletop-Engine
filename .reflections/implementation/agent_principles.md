@@ -8,6 +8,17 @@ This reflection is a discussion of the multi-agent system approach to utilise an
 
 ---
 
+## Contents
+
+- [Context](#context)
+- [Agent File Design Principles](#agent-file-design-principles)
+- [Multi-agent system approach](#multi-agent-system-approach)
+- [Agent Types](#agent-types)
+- [Final consideration](#final-consideration)
+- [References](#references)
+
+---
+
 ## Context
 
 ### Related project principles

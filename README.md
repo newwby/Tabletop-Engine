@@ -3,7 +3,13 @@
 
 ---
 
-## Table of Contents
+## Contents
+
+- [Overview](#overview)
+- [Design Principles & Architecture Direction](#design-principles-architecture-direction)
+- [Key Documents](#key-documents)
+
+## Key Documents
 
 - **[Working to-do list](https://github.com/newwby/Tabletop-Engine/blob/main/todo.md)** - _living document, broadly covers tasks for each phase._
 - **[Architectural Decisions](https://github.com/newwby/Tabletop-Engine/blob/main/decisions.md)** - _Details confirmed design decisions and rationale._

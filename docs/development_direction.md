@@ -4,6 +4,15 @@ Details potential outcomes from the project. Deliverables will, at minimum, incl
 
 ---
 
+## Contents
+
+- [Research Potential (Critical View)](#research-potential-critical-view)
+- [Portfolio Value](#portfolio-value)
+- [Recommended Positioning](#recommended-positioning)
+- [Conclusion](#conclusion)
+
+---
+
 ## Research Potential (Critical View)
 
 ### Strengths

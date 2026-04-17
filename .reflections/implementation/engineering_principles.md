@@ -8,6 +8,16 @@ This reflection reviews relevant software engineer principles and architectural 
 
 ---
 
+## Contents
+
+- [Key Concepts](#key-concepts)
+- [System Reliability](#system-reliability)
+- [Project Risks and Mitigations](#project-risks-and-mitigations)
+- [Conclusion](#conclusion)
+- [Next steps](#next-steps)
+
+---
+
 ## Key Concepts
 
 ### Architecture Patterns

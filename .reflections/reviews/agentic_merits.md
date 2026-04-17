@@ -6,6 +6,15 @@
 
 This reflection covered the potential of the project, investigating agentic development to build a tabletop campaign, as study and blog material. It then expands into my personal observed benefits, maps to known research, and means to critically evaluate without harming learning depth.
 
+## Contents
+
+- [Project learning evaluation as a reflective blog subject](#project-learning-evaluation-as-a-reflective-blog-subject)
+- [Learning Risks](#learning-risks)
+- [Conclusion](#conclusion)
+- [Continued Study](#continued-study)
+
+---
+
 ## Project learning evaluation as a reflective blog subject
 
 ### Themes for reflection

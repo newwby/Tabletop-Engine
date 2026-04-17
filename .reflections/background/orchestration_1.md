@@ -8,6 +8,19 @@ GitHub Copilot web does not allow switching agents mid-task or orchestrating nat
 
 ---
 
+## Contents
+
+- [Orchestration](#orchestration)
+- [Copilot Agent Constraints & Implications](#copilot-agent-constraints-implications)
+- [Lightweight Orchestration Approaches](#lightweight-orchestration-approaches)
+- [Execution Wrapper Model](#execution-wrapper-model)
+- [GitHub Actions as Validation Layer](#github-actions-as-validation-layer)
+- [Composed Execution - Subagents vs Handovers](#composed-execution-subagents-vs-handovers)
+- [Architectural Decisions](#architectural-decisions)
+- [Further Research / Links to Explore](#further-research-links-to-explore)
+
+---
+
 ## Orchestration
 
 _When people refer to orchestration, they mean a separate layer deciding which agent or model to call, in what order, and how outputs move between steps._

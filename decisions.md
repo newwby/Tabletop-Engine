@@ -7,6 +7,20 @@ This document tracks confirmed design decisions for the Tabletop-Engine project.
 
 ---
 
+## Contents
+
+- [Project Goals](#project-goals)
+- [Architecture Decisions](#architecture-decisions)
+- [Design Principles](#design-principles)
+- [Canonical Truth Management](#canonical-truth-management)
+- [Agent System Design](#agent-system-design)
+- [MVP Deliverables](#mvp-deliverables)
+- [Scope Boundaries](#scope-boundaries)
+- [Known Issues from Existing Work](#known-issues-from-existing-work)
+- [Document Status](#document-status)
+
+---
+
 ## Project Goals
 
 **Decision**: Build an effective and reproducible multi-agent system for supporting tabletop DMs.

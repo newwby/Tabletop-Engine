@@ -8,6 +8,17 @@ Multi-agent workflows solve the problem of context pollution, degraded output/ha
 
 ---
 
+## Contents
+
+- [Subagent Key Concepts](#subagent-key-concepts)
+- [Setup](#setup)
+- [Handoffs vs Subagents](#handoffs-vs-subagents)
+- [Architectural Decisions / Options Surfaced](#architectural-decisions-options-surfaced)
+- [Conclusion](#conclusion)
+- [Further Research / Links to Explore](#further-research-links-to-explore)
+
+---
+
 ## Subagent Key Concepts
 
 ### Context Isolation via Subagents
