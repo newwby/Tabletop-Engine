@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Project README
+    url: https://github.com/newwby/Tabletop-Engine/blob/main/README.md
+    about: Start here for project context and links before opening an issue.
