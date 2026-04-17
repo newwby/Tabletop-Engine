@@ -11,7 +11,7 @@ All agent files in this repository should follow these standards:
 - Require anti-overlap checks before adding or expanding an agent role.
 - Require explicit decision logging for role/layer changes to avoid endless exploration.
 - Time-box exploratory design and convert findings into accept/defer/reject outcomes.
-- Keep agent instructions concise; additions to agent behavior must be heavily justified because overly wide instruction files can reduce performance.
+- Keep agent instructions concise; additions to agent behavior must be heavily justified, and duplicated/non-essential rules should be removed.
 - Require clarification when requirements are ambiguous or conflicting.
 - Escalate canonical approvals to humans rather than self-approving.
 - Avoid IP conflicts: do not reproduce copyrighted/proprietary settings or text without explicit user-provided rights.

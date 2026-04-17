@@ -49,7 +49,7 @@ If any check fails, adjust existing roles instead of creating a net-new agent.
 - Require a decision-log entry for any proposed net-new layer or agent.
 - Prefer tightening instructions/contracts over adding new orchestration complexity.
 - Time-box exploratory role design and convert open research into explicit accept/defer decisions.
-- Additions to agent behavior/instructions must be heavily justified; overly wide instruction files can reduce agent performance.
+- Additions to agent behavior/instructions must be heavily justified; treat duplicated rules and long "do everything" sections as instruction bloat to avoid.
 
 ## IP Conflict Safety Expectations
 
