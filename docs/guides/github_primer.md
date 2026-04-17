@@ -20,7 +20,8 @@ You do **not** need to be a programmer to read project information or submit an 
 
 ## 2) Where to find what you need in this project
 Start with these places:
-- **Issues** tab: this is the priority place for new contributors, where active work and requests are tracked.
+- **Discussions** tab: ask questions and talk to other contributors, where a full issue isn't required.
+- **Issues** tab: this is the place for new contributors, where active work and requests are tracked.
 - **readme**: background and high-level context about the project.
 - **/docs/** folder: extra context, notes, and project planning documents.
 
