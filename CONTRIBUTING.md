@@ -60,7 +60,7 @@ See [engineering principles](.reflections/implementation/engineering_principles.
 <h2 id="branchstrategy">Branch Strategy</h2>
 
 1. `main` is the default branch and should always remain stable and presentable.
-2. Direct commits to `main` are not permitted.
+2. Changes to `main` should be made through pull requests rather than direct pushes.
 3. New work is completed in short-lived branches.
 4. Changes to `main` must go through a pull request.
 5. Before merging a pull request, the working branch should be updated with the latest `main` to reduce merge conflicts.
