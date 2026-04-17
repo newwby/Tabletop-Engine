@@ -108,8 +108,8 @@ These items require explicit decisions before implementation can proceed:
 - [ ] **Character state tooling**: Which platform/format for character data ingestion?
 - [ ] **Agent permissions**: Formalize which directories each agent can modify
 - [ ] **Agent expectations**: for agent outputs.
-- [ ] **Agent constraints**: (e.g. over-generation, scope, continuity) for consistency.
-- [ ] **Agent layer definitions**: including initial agent layers.
+- [x] **Agent constraints**: (e.g. over-generation, scope, continuity) for consistency.
+- [x] **Agent layer definitions**: including initial agent layers.
 - [ ] **System operation diagrams**: how do agents interact? how does data move? where does validation occur?
 
 ### 7. Finalise MVP goals
