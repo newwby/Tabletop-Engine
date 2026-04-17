@@ -2,62 +2,22 @@
 
 This file defines current agents for Tabletop-Engine orchestration and tracks future agent proposals.
 
-## General Agent Development Standards
-
-All agent files in this repository should follow these standards:
-- Keep a single clear responsibility with explicit non-overlap boundaries.
-- Separate generation, validation, orchestration, and history/audit concerns.
-- Follow MVP scope and avoid premature expansion (YAGNI).
-- Require clarification when requirements are ambiguous or conflicting.
-- Escalate canonical approvals to humans rather than self-approving.
-- Align behavior with `README.md`, `decisions.md`, and current-status `.reflections` files.
-
-## Generic Agent File Instructions (Reference for All Agents)
-
-Use this baseline structure when creating new agent files:
-
-```md
----
-name: agent-name
-description: One-line role summary
-tools: ["read", "search"]
----
-
-You are the <Agent Name> agent for Tabletop-Engine.
-
-## Role
-- One-sentence role scope.
-
-## Core Responsibilities
-- Responsibility 1
-- Responsibility 2
-
-## Boundaries
-- Explicit non-goals
-- Work that must be delegated elsewhere
-
-## Output Contract
-- Expected output fields and format
-
-## Operating Rules
-- Required source-of-truth documents
-- Escalation/clarification requirements
-```
+See `.github/copilot-instructions.md` for shared agent standards and generic agent file guidance.
 
 ## Current Agents (Implemented Now)
 
 The project currently uses a minimum planner-worker baseline for setup-stage orchestration.
 
-### Orchestrator (`agents/orchestrator.agent.md`)
+### Orchestrator (`.github/agents/orchestrator.agent.md`)
 Single human-facing entry point. Classifies requests, delegates specialist work, integrates outcomes, and ensures maintenance agents are regularly invoked.
 
-### Continuity Auditor (`agents/continuity-auditor.agent.md`)
+### Continuity Auditor (`.github/agents/continuity-auditor.agent.md`)
 Validation specialist for consistency checking and contradiction detection. Usually invoked by Orchestrator during workflows.
 
-### Historian (`agents/historian.agent.md`)
+### Historian (`.github/agents/historian.agent.md`)
 Audit and intake specialist. Records approved changes and post-session intake into `/.history/YYYY-MM/` with snake_case timestamped filenames.
 
-### Lore Builder (`agents/lore-builder.agent.md`)
+### Lore Builder (`.github/agents/lore-builder.agent.md`)
 Setup-stage worldbuilding specialist for foundational lore generation while canon is still being established.
 
 ## Why this is the minimum set

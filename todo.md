@@ -172,15 +172,15 @@ These items require explicit decisions before implementation can proceed:
 
 - [ ] Historian Agent
   - [ ] Define input/output contract
-  - [ ] Create `agents/historian.agent.md`
+  - [ ] Create `.github/agents/historian.agent.md`
   - [ ] Define validation expectations
 - [ ] Session Compiler Agent
   - [ ] Define input/output contract
-  - [ ] Create `agents/session-compiler.agent.md`
+  - [ ] Create `.github/agents/session-compiler.agent.md`
   - [ ] Define session deliverable structure
 - [ ] Continuity Auditor Agent
   - [ ] Define input/output contract
-  - [ ] Create `agents/continuity-auditor.agent.md`
+  - [ ] Create `.github/agents/continuity-auditor.agent.md`
   - [ ] Define validation rules
 
 #### Worker Agents (Priority 3 — Proposal-only)
