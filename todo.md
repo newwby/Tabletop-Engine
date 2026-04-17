@@ -92,7 +92,7 @@ This living document exists as both a guide and record, to track the project's c
   - _Completed in `.reflections/background/prompt_engineering.md`_
 
 ### 5. Propose agent/layer structure for MVP
-- [ ] Review [/docs/candidate_agents.md](https://github.com/newwby/Tabletop-Engine/blob/main/docs/candidate_agents.md)
+- [ ] Review [/docs/repository_agents.md](https://github.com/newwby/Tabletop-Engine/blob/main/docs/repository_agents.md)
 - [ ] Define initial agents and layers, as well as introduction order
 - [ ] Add anti-overlap checks for agent responsibilities
 - [ ] Add explicit controls for scope creep and overengineering
@@ -182,10 +182,6 @@ These items require explicit decisions before implementation can proceed:
   - [ ] Define input/output contract
   - [ ] Create `.github/agents/continuity-auditor.agent.md`
   - [ ] Define validation rules
-- [ ] Post-Session Snapshot Agent
-  - [ ] Define input/output contract
-  - [ ] Create `.github/agents/session-snapshot.agent.md`
-  - [ ] Define validation rules
 
 #### Worker Agents (Priority 3 — Proposal-only)
 - [ ] Determine narrow task agents to support campaign creation
@@ -203,6 +199,8 @@ These items require explicit decisions before implementation can proceed:
 - [ ] Define canonical state files (`campaign_state.md`, `active_threads.md`, `timeline.md`)
 - [ ] Define session log output schema
 - [ ] Define session primer/compilation schema
+- [ ] Standardise session deliverable format
+- [ ] Standardise post-session intake format
 
 ### 5. Documentation & Review (repeated task)
 
