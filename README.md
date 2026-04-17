@@ -39,6 +39,12 @@ The system uses a **hierarchical planner-worker architecture** with specialized 
 - **Worker Agents**: Narrow specialists (Continuity, Prep, Encounter, Lore, Documentation, Historian)
 - **MCP Tooling**: Campaign data, rule references, and shared capabilities
 
+MVP rollout is layered to avoid overengineering:
+1. Orchestrator + Continuity + Historian
+2. Prep/Session Compiler
+3. Encounter + Lore
+4. Documentation hardening between rollout stages
+
 Orchestration happens through **GitHub Copilot subagents** (VSCode) with context isolation per agent. The human DM maintains oversight through validation gates for canonical changes.
 
 ### Core Principles
@@ -50,6 +56,9 @@ Orchestration happens through **GitHub Copilot subagents** (VSCode) with context
 - **Human-in-the-loop decision making** - checkpoints for canonical changes
 - **Canonical Truth** - validation gates prevent unreliable outputs becoming canon
 - **Long-term maintainability** - versioning, observability, clear contracts
+- **Anti-overlap enforcement** - single-owner responsibilities and decline-and-route behavior
+- **Scope control** - one-layer-at-a-time rollout with explicit "why now" decisions for agent expansion
+- **IP safety** - avoid unlicensed third-party setting reproduction unless explicitly authorized
 
 ### Implementation
 

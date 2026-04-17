@@ -162,6 +162,64 @@ This document tracks confirmed design decisions for the Tabletop-Engine project.
 - **Documentation Agent**: Reviews reflection/campaign docs, readme, devlogs, audit logs
 - **Historian Agent**: Maintains change history record of campaign updates
 
+#### Initial layer rollout
+**Decision**: Introduce agents in controlled layers instead of enabling all proposed roles at once.
+
+**Introduction Order**:
+1. Orchestrator + Continuity Agent + Historian Agent
+2. Prep/Session Compiler Agent
+3. Encounter Agent + Lore Agent
+4. Documentation Agent hardening passes between each rollout stage
+
+**Rationale**:
+- Reduces startup complexity and orchestration noise
+- Establishes control, validation, and logging before content scale-out
+- Keeps MVP focused on reliable preparation outputs
+
+#### Anti-overlap enforcement
+**Decision**: Add explicit anti-overlap controls for agent responsibilities.
+
+**Implementation Requirements**:
+- Single-owner task matrix per agent capability area
+- Decline-and-route behavior for out-of-scope requests
+- Structured handoff contracts (inputs/outputs/acceptance criteria)
+- Orchestrator conflict gate for overlapping or conflicting outputs
+
+**Rationale**: Prevents duplicate authority, contradictory outputs, and deadlocks.
+
+#### Scope creep and overengineering controls
+**Decision**: Enforce explicit controls before introducing new agents or workflow layers.
+
+**Implementation Requirements**:
+- New agent proposals require "why now" decision entry tied to MVP goals
+- One-layer-at-a-time rollout with validation gate between layers
+- Prefer prompt/contract refinement before adding new agents
+- Defer non-MVP complexity unless justified by validated MVP gaps
+
+**Rationale**: Preserves delivery focus and avoids premature system complexity.
+
+#### IP conflict avoidance in agent responsibilities
+**Decision**: Agent responsibilities must include explicit IP conflict safeguards.
+
+**Implementation Requirements**:
+- Do not reproduce third-party copyrighted/trademarked setting content unless authorized by user input or clear licensing
+- Prefer original material or clearly licensed/open references
+- Escalate uncertain provenance to human review before persistence
+- Capture provenance notes when external material influences outputs
+
+**Rationale**: Reduces legal/compliance risk and protects repository integrity.
+
+#### Progress accounting and decision logging expectations
+**Decision**: Require progress-accounting and decision logging outputs in orchestration cycles.
+
+**Implementation Requirements**:
+- Historian records approved updates and progress deltas for future accounting
+- Exploratory work must end with: decision, deferred decision with owner/date, or explicit blocker
+- Avoid repeated exploration loops without logged outcome
+- Summarize outcomes in root-level decision tracking artifacts
+
+**Rationale**: Improves auditability, prevents endless exploration, and supports measurable project progress.
+
 #### MCP Tooling
 **Decision**: Utilize MCP servers for campaign data, rule references, storage, retrieval, and generation.
 

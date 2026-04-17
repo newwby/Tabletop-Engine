@@ -1,129 +1,101 @@
-**_This WIP file contains potential agents identified for implementation. Project scope will require gradual introduction of agents, not excessive complication from day one._**
+**_This WIP file defines the MVP-first agent set and controlled rollout plan. Agents are introduced in layers to avoid early complexity._**
 
 ---
 
-# Potential Agent Roles
+# Initial Agent Layers (MVP-first)
 
-This is a working list of candidate agents.  
-Not all will be included in MVP.
+## Layer 0: Control Layer
 
----
-
-## Core System Agents
-
-### Agent Manager
-- Creates and maintains agents
-- Enforces structure and boundaries
-- Owns system-level consistency
+### Orchestrator
+- Single human-facing entry point
+- Classifies requests and decomposes tasks
+- Invokes specialist agents and integrates outputs
+- Enforces routing, quality gates, and stop conditions
 
 ---
 
-### Architecture Agent
-- Identifies architectural decisions
-- Surfaces trade-offs
-- Supports human decision-making
+## Layer 1: Governance Layer
+
+### Continuity Auditor
+- Validates canon/world-state consistency
+- Flags unresolved thread conflicts
+- Blocks canon updates that fail validation checks
+
+### Historian
+- Records project progress for accounting and review
+- Maintains traceable records of approved campaign/system updates
+- Writes concise decision outcomes for completed task cycles
+
+### Documentation
+- Maintains README/docs/reflections alignment
+- Captures policy updates and process constraints
+- Ensures decision logs and operating expectations stay current
 
 ---
 
-### Editor / Validator Agent
-- Reviews outputs against intent
-- Flags inconsistencies or ambiguity
-- Acts as a quality control layer
+## Layer 2: Delivery Layer
+
+### Session Compiler (Prep)
+- Produces preparation deliverables for upcoming sessions
+- Compiles approved canon/context into usable DM outputs
+
+### Encounter Designer
+- Creates encounters, quests, and scene events
+- Works only from approved canon and task constraints
+
+### Lore Builder
+- Creates world details (locations, factions, NPC context)
+- Produces additive draft content for review before canonization
 
 ---
 
-## Content Agents
+# Introduction Order
 
-### Content Generator
-- NPCs
-- Encounters
-- Lore
-- Worldbuilding elements
+1. **Orchestrator + Continuity Auditor + Historian** (minimum safe control loop)
+2. **Session Compiler** (first practical MVP deliverable)
+3. **Encounter Designer + Lore Builder** (controlled expansion of generation scope)
+4. **Documentation** hardening pass after each added layer
 
----
-
-### Narrative Designer
-- Story arcs
-- Plot hooks
-- Campaign structure
+No new agent is introduced until the previous layer has:
+- stable invocation pattern
+- clear handoff contracts
+- validated logging and review outputs
 
 ---
 
-### Dialogue Generator
-- NPC dialogue
-- Tone consistency
-- Character voice
+# Anti-overlap Checks (Required)
+
+- **Single-owner rule**: each task type has exactly one primary owning agent
+- **Explicit handoff contracts**: each handoff states input, output, and acceptance criteria
+- **Decline-and-route rule**: agents must decline out-of-scope work and route via orchestrator
+- **Conflict gate**: overlapping recommendations are resolved by orchestrator + continuity review before merge
+- **Responsibility matrix review**: agent-role matrix must be reviewed when introducing or modifying agents
 
 ---
 
-## Asset Agents
+# Scope Creep & Overengineering Controls
 
-### Map Generator
-- Battle maps
-- World maps
-- Layout suggestions
-
----
-
-### Token / Standee Generator
-- Character tokens
-- Enemy standees
-- Visual consistency
+- MVP-first: do not add an agent without an active MVP requirement
+- One-layer-at-a-time rollout
+- Prefer improving prompts/contracts before adding new agents
+- Require a written "why now" decision for each new agent
+- Defer live-session and multimodal complexity until post-MVP validation
 
 ---
 
-### Audio / Ambience Generator
-- Background audio
-- Scene ambience
-- Mood support
+# IP Conflict Avoidance Responsibilities
+
+All agents must:
+- avoid reproducing copyrighted or trademarked third-party setting content unless user-provided and authorized
+- prefer original campaign material or clearly licensed/open content
+- flag uncertain provenance for human approval before persistence
+- record source/provenance notes when external references influence output
 
 ---
 
-## Runtime Agents
+# Decision Logging Expectations
 
-### Session Assistant
-- Real-time support during play
-- Rule lookups
-- Context recall
-
----
-
-### Rules Adjudicator
-- Resolves mechanics questions
-- Ensures rules consistency
-
----
-
-## Persistence Agents
-
-### Historian Agent
-- Updates world state post-session
-- Tracks events and consequences
-
----
-
-### Memory / Context Agent
-- Maintains long-term campaign state
-- Handles retrieval of past information
-
----
-
-## Support Agents
-
-### Intent Clarifier
-- Resolves ambiguous user input
-- Ensures agents act on correct intent
-
----
-
-### Consistency Checker
-- Cross-references world state
-- Prevents contradictions
-
----
-
-## Notes
-
-- Agents must avoid overlapping responsibilities
-- Each agent should have a **clear boundary**
-- Not all agents are required initially
+To avoid endless exploration loops:
+- each exploratory cycle must end in one of: **decision**, **deferred decision with owner/date**, or **blocked with explicit blocker**
+- exploration without a logged outcome should not continue beyond one additional iteration
+- decisions must be summarized in root decision tracking files for auditability

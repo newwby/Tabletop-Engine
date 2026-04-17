@@ -1,6 +1,6 @@
 # Working Todo List
 
-**Last updated**: 06/04/2026  
+**Last updated**: 17/04/2026  
 **Status**: Reflects current project state after foundational research phase
 
 This living document exists as both a guide and record, to track the project's current working tasks, separating completed foundational research from implementation work ahead.
@@ -92,13 +92,13 @@ This living document exists as both a guide and record, to track the project's c
   - _Completed in `.reflections/background/prompt_engineering.md`_
 
 ### 5. Propose agent/layer structure for MVP
-- [ ] Review [/docs/candidate_agents.md](https://github.com/newwby/Tabletop-Engine/blob/main/docs/candidate_agents.md)
-- [ ] Define initial agents and layers, as well as introduction order
-- [ ] Add anti-overlap checks for agent responsibilities
-- [ ] Add explicit controls for scope creep and overengineering
-- [ ] Agent responsibilities updated to include instruction to avoid IP conflict problems
-- [ ] Consider agent to record project progress for future project accounting
-- [ ] Add decision logging expectations to avoid endless exploration
+- [x] Review [/docs/candidate_agents.md](https://github.com/newwby/Tabletop-Engine/blob/main/docs/candidate_agents.md)
+- [x] Define initial agents and layers, as well as introduction order
+- [x] Add anti-overlap checks for agent responsibilities
+- [x] Add explicit controls for scope creep and overengineering
+- [x] Agent responsibilities updated to include instruction to avoid IP conflict problems
+- [x] Consider agent to record project progress for future project accounting
+- [x] Add decision logging expectations to avoid endless exploration
 
 ### 6. Determine MVP decisions
 
