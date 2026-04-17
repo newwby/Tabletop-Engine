@@ -9,9 +9,9 @@ These are candidate templates to support structured development.
 - [1. Architecture Decision](#1-architecture-decision)
 - [2. Agent Definition](#2-agent-definition)
 - [3. Agent Review](#3-agent-review)
-- [4. Task / Feature](#4-task-feature)
+- [4. Task / Feature](#4-task--feature)
 - [5. Bug](#5-bug)
-- [6. Research / Exploration](#6-research-exploration)
+- [6. Research / Exploration](#6-research--exploration)
 - [Notes](#notes)
 
 ---

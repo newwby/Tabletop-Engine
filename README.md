@@ -6,7 +6,7 @@
 ## Contents
 
 - [Overview](#overview)
-- [Design Principles & Architecture Direction](#design-principles-architecture-direction)
+- [Design Principles & Architecture Direction](#design-principles--architecture-direction)
 - [Key Documents](#key-documents)
 
 ## Key Documents
