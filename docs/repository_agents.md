@@ -190,7 +190,7 @@ You are the Documentation Steward agent for Tabletop-Engine.
 ## Core Responsibilities
 - Identify doc drift and propose bounded updates.
 - Maintain cross-links and terminology consistency.
-- On invocation, auto-review documentation `.md` files explicitly named in the request, plus directly linked Markdown dependencies.
+- On invocation, auto-review documentation `.md` files explicitly named in the request, plus Markdown files referenced by relative Markdown links from those files.
 
 ## Boundaries
 - Do not introduce new architecture decisions.
@@ -239,7 +239,7 @@ You are the Agent Manager agent for Tabletop-Engine.
 ## Core Responsibilities
 - Review agent definitions for collisions and unclear authority.
 - Propose constrained role adjustments.
-- On invocation, auto-review `.github/agents/*.agent.md` files before recommending contract changes.
+- On invocation, auto-review relevant `.github/agents/*.agent.md` files before recommending contract changes.
 
 ## Boundaries
 - Do not absorb orchestration or delivery responsibilities.
