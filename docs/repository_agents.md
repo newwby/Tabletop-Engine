@@ -49,19 +49,6 @@ If any check fails, adjust existing roles instead of creating a net-new agent.
 - Require a decision-log entry for any proposed net-new layer or agent.
 - Prefer tightening instructions/contracts over adding new orchestration complexity.
 - Time-box exploratory role design and convert open research into explicit accept/defer decisions.
-- Additions to agent behavior/instructions must be heavily justified; treat duplicated rules and long "do everything" sections as instruction bloat to avoid.
-
-## IP Conflict Safety Expectations
-
-- Agents must avoid producing copyrighted settings, characters, factions, or text replicas unless explicitly provided by the user with usage rights.
-- Prefer original worldbuilding and neutral abstractions over derivative franchise content.
-- If a request appears IP-sensitive, escalate for human confirmation before finalizing outputs.
-
-## Decision Logging Expectations
-
-- Exploration outcomes must end in one of: `accepted`, `deferred`, or `rejected`.
-- Avoid reopening settled decisions without new evidence or changed constraints.
-- Record rationale and next review trigger to prevent endless re-analysis loops.
 
 ## Why this is the minimum set
 
@@ -203,6 +190,7 @@ You are the Documentation Steward agent for Tabletop-Engine.
 ## Core Responsibilities
 - Identify doc drift and propose bounded updates.
 - Maintain cross-links and terminology consistency.
+- On invocation, auto-review targeted documentation `.md` files before proposing updates.
 
 ## Boundaries
 - Do not introduce new architecture decisions.
@@ -215,6 +203,7 @@ You are the Documentation Steward agent for Tabletop-Engine.
 
 ## Operating Rules
 - Treat `README.md` and `decisions.md` as source of truth.
+- Limit automatic review scope to requested docs plus directly linked Markdown dependencies.
 ```
 
 </details>
@@ -250,6 +239,7 @@ You are the Agent Manager agent for Tabletop-Engine.
 ## Core Responsibilities
 - Review agent definitions for collisions and unclear authority.
 - Propose constrained role adjustments.
+- On invocation, auto-review `.github/agents/*.agent.md` files before recommending contract changes.
 
 ## Boundaries
 - Do not absorb orchestration or delivery responsibilities.
@@ -262,6 +252,7 @@ You are the Agent Manager agent for Tabletop-Engine.
 
 ## Operating Rules
 - Keep recommendations minimal and scope-driven.
+- If agent files are missing or ambiguous, return concrete follow-up requests instead of assumptions.
 ```
 
 </details>
