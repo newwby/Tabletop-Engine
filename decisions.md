@@ -2,8 +2,44 @@
 
 This document tracks confirmed design decisions for the Tabletop-Engine project.
 
-**Last Updated**: 06/04/2026  
+**Last Updated**: 17/04/2026  
 **Source**: .reflections/ directory (current-status documents only)
+
+---
+
+## Table of Contents
+
+- [Project Goals](#project-goals)
+  - [MVP Scope](#mvp-scope)
+- [Architecture Decisions](#architecture-decisions)
+  - [Core Architecture Pattern](#core-architecture-pattern)
+  - [Orchestration Strategy](#orchestration-strategy)
+  - [Workflow Pattern](#workflow-pattern)
+  - [Event-Driven Extensions](#event-driven-extensions)
+- [Design Principles](#design-principles)
+  - [Human-in-the-Loop](#human-in-the-loop)
+  - [Single Responsibility](#single-responsibility)
+  - [Separation of Concerns](#separation-of-concerns)
+  - [Design by Contract](#design-by-contract)
+  - [YAGNI](#yagni)
+  - [DRY](#dry)
+- [Canonical Truth Management](#canonical-truth-management)
+  - [Source of Truth](#source-of-truth)
+  - [Observability](#observability)
+- [Agent System Design](#agent-system-design)
+  - [Agent File Principles](#agent-file-principles)
+  - [Agent Orchestration Mechanism](#agent-orchestration-mechanism)
+  - [Orchestrator implementation](#orchestrator-implementation)
+  - [Worker agent implementation](#worker-agent-implementation)
+  - [MCP Tooling](#mcp-tooling)
+- [MVP Deliverables](#mvp-deliverables)
+- [Scope Boundaries](#scope-boundaries)
+  - [Out of Scope for MVP](#out-of-scope-for-mvp)
+  - [Post-MVP Considerations](#post-mvp-considerations)
+- [Known Issues from Existing Work](#known-issues-from-existing-work)
+  - [Multi-Agent GM System Risks](#multi-agent-gm-system-risks)
+  - [Latency Concerns](#latency-concerns)
+- [Document Status](#document-status)
 
 ---
 
@@ -141,7 +177,7 @@ This document tracks confirmed design decisions for the Tabletop-Engine project.
 - **Handoffs**: Human-paced, context-accumulating, simpler setup but accumulates context pollution. Better for 2-3 stage flows with deliberate human checkpoints.
 - **Singular Specialist Agents**: Manual selection per task. Simplest to use, best for well-scoped one-shot tasks but no orchestration benefits.
 
-#### Orchestrator implementation
+### Orchestrator implementation
 **Decision**: One orchestrator agent invoked directly by humans.
 
 **Responsibilities**:
@@ -151,7 +187,7 @@ This document tracks confirmed design decisions for the Tabletop-Engine project.
 
 **Note**: Does not produce content directly; manages delegation and integration only.
 
-#### Worker agent implementation
+### Worker agent implementation
 **Decision**: Narrow specialist agents with clear bounded authority, non-overlapping mandates.
 
 **Defined Agents**:
@@ -162,11 +198,10 @@ This document tracks confirmed design decisions for the Tabletop-Engine project.
 - **Documentation Agent**: Reviews reflection/campaign docs, readme, devlogs, audit logs
 - **Historian Agent**: Maintains change history record of campaign updates
 
-#### MCP Tooling
+### MCP Tooling
 **Decision**: Utilize MCP servers for campaign data, rule references, storage, retrieval, and generation.
 
 **Rationale**: Enables all agents to access same capabilities without duplicating rules expertise.
-
 
 ---
 

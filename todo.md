@@ -1,21 +1,37 @@
 # Working Todo List
 
-**Last updated**: 06/04/2026  
+**Last updated**: 17/04/2026  
 **Status**: Reflects current project state after foundational research phase
 
 This living document exists as both a guide and record, to track the project's current working tasks, separating completed foundational research from implementation work ahead.
 
 ---
 
-# Table of Contents
+## Table of Contents
 
-- [Phase 0 - Setup and Research](#phase-0-setup-phase)
+- [Phase 0 Setup Phase](#phase-0-setup-phase)
+  - [Repository Structure & Guidelines](#1-repository-structure--guidelines)
+  - [Documentation Review & Alignment](#2-documentation-review--alignment)
+  - [Update todo.md to address active priorities](#3-update-todomd-to-address-active-priorities)
+  - [Research and Planning](#4-research-and-planning)
+  - [Propose agent/layer structure for MVP](#5-propose-agentlayer-structure-for-mvp)
+  - [Determine MVP decisions](#6-determine-mvp-decisions)
+  - [Finalise MVP goals](#7-finalise-mvp-goals)
+  - [Documentation & Review](#8-documentation--review-repeated-task)
+  - [Exit Criteria](#9-exit-criteria)
 - [Phase 1 - MVP Implementation Phase](#phase-1---mvp-implementation-phase)
-- [Phase 2 - Iterative Campaign Phase](#phase-2---iterative-campaign-phase) _(WIP)_
+  - [Orchestration & Workflow](#1-orchestration--workflow)
+  - [Tooling & Integration](#2-tooling--integration)
+  - [Agent Implementation](#3-agent-implementation)
+  - [Schema & Data Model](#4-schema--data-model)
+  - [Documentation & Review](#5-documentation--review-repeated-task)
+  - [Exit Criteria](#6-exit-criteria)
+- [Phase 2 - Iterative Campaign Phase](#phase-2---iterative-campaign-phase)
+- [Notes](#notes)
 
 ---
 
-## Phase #0 Setup Phase
+### Phase 0 Setup Phase
 
 ### 1. Repository Structure & Guidelines
 
@@ -46,7 +62,6 @@ This living document exists as both a guide and record, to track the project's c
 - [x] Continue progress on MVP/Core Direction items listed in [todo.md](https://github.com/newwby/Tabletop-Engine/blob/main/todo.md)
 - [x] Continue progress on Architecture Decisions listed in [todo.md](https://github.com/newwby/Tabletop-Engine/blob/main/todo.md)
 - [x] Continue progress on Agents and Workflow Design listed in [todo.md](https://github.com/newwby/Tabletop-Engine/blob/main/todo.md)
-
 
 ### 4. Research and Planning
 
@@ -92,7 +107,8 @@ This living document exists as both a guide and record, to track the project's c
   - _Completed in `.reflections/background/prompt_engineering.md`_
 
 ### 5. Propose agent/layer structure for MVP
-- [ ] Review [/docs/candidate_agents.md](https://github.com/newwby/Tabletop-Engine/blob/main/docs/candidate_agents.md)
+
+- [ ] Review [/docs/repository_agents.md](https://github.com/newwby/Tabletop-Engine/blob/main/docs/repository_agents.md)
 - [ ] Define initial agents and layers, as well as introduction order
 - [ ] Add anti-overlap checks for agent responsibilities
 - [ ] Add explicit controls for scope creep and overengineering
@@ -143,7 +159,7 @@ These items require explicit decisions before implementation can proceed:
 
 ---
 
-## Phase #1 - MVP Implementation Phase
+### Phase 1 - MVP Implementation Phase
 
 ### 1. Orchestration & Workflow
 
@@ -182,10 +198,6 @@ These items require explicit decisions before implementation can proceed:
   - [ ] Define input/output contract
   - [ ] Create `.github/agents/continuity-auditor.agent.md`
   - [ ] Define validation rules
-- [ ] Post-Session Snapshot Agent
-  - [ ] Define input/output contract
-  - [ ] Create `.github/agents/session-snapshot.agent.md`
-  - [ ] Define validation rules
 
 #### Worker Agents (Priority 3 — Proposal-only)
 - [ ] Determine narrow task agents to support campaign creation
@@ -203,6 +215,8 @@ These items require explicit decisions before implementation can proceed:
 - [ ] Define canonical state files (`campaign_state.md`, `active_threads.md`, `timeline.md`)
 - [ ] Define session log output schema
 - [ ] Define session primer/compilation schema
+- [ ] Standardise session deliverable format
+- [ ] Standardise post-session intake format
 
 ### 5. Documentation & Review (repeated task)
 
@@ -218,13 +232,13 @@ These items require explicit decisions before implementation can proceed:
 
 ---
 
-## Phase #2 - Iterative Campaign Phase
+### Phase 2 - Iterative Campaign Phase
 
 _Phase 2 has no defined to-do at this time._
 
 ---
 
-## Notes
+### Notes
 
 - Reflections are maintained in `.reflections/` and should be consulted before implementing features
 - Focus remains on modular, human-supervised architecture (not autonomous swarm)
