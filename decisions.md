@@ -5,8 +5,6 @@ This document tracks confirmed design decisions for the Tabletop-Engine project.
 **Last Updated**: 17/04/2026  
 **Source**: .reflections/ directory (current-status documents only)
 
----
-
 ## Table of Contents
 
 - [Project Goals](#project-goals)
@@ -16,6 +14,7 @@ This document tracks confirmed design decisions for the Tabletop-Engine project.
   - [Orchestration Strategy](#orchestration-strategy)
   - [Workflow Pattern](#workflow-pattern)
   - [Event-Driven Extensions](#event-driven-extensions)
+  - [Post-Session Intake Workflow](#post-session-intake-workflow)
 - [Design Principles](#design-principles)
   - [Human-in-the-Loop](#human-in-the-loop)
   - [Single Responsibility](#single-responsibility)
@@ -53,6 +52,8 @@ This document tracks confirmed design decisions for the Tabletop-Engine project.
 * TTRPG-specific grounding for rules/state/spoiler control
 * Long-term campaign memory (evolving versioned canon through bible, world state, consistent NPCs)
 * Established workflow; approved canon maintained on main & session changes pushed to branch first
+* Session deliverables: structured output artefacts generated per session (summary, notable events, state changes, unresolved questions)
+* Post-session intake workflow: GitHub Issue Forms as the standard intake surface, with automated branch and pull request scaffolding for review
 
 ---
 
@@ -76,9 +77,29 @@ This document tracks confirmed design decisions for the Tabletop-Engine project.
 **Rationale**: Build pipelines create session deliverables; supports preparation workflows.
 
 ### Event-Driven Extensions
-**Decision**: Defer GitHub Actions and hooks integration for post-MVP.
+**Decision**: Defer broad GitHub Actions and hooks integration for post-MVP, with the exception of the post-session intake routing workflow.
 
-**Rationale**: Not suitable for MVP complexity; revisit after core orchestration is stable.
+**Rationale**: Full event-driven automation is not suitable for MVP complexity and should be revisited after core orchestration is stable. However, a targeted GitHub Actions workflow for detecting post-session intake issues and scaffolding session branches and pull requests is within MVP scope, as it is the primary intake routing mechanism.
+
+### Post-Session Intake Workflow
+**Decision**: Adopt GitHub Issue Forms as the standard post-session intake surface. Use a GitHub Actions workflow to detect intake issues, prepare a session-specific branch, generate draft session artefacts, and open a pull request for review.
+
+**Key rule**: Issue intake produces draft evidence and proposed changes only. Canon remains a reviewed and approved layer; raw player input must not directly overwrite canonical state.
+
+**Workflow shape**:
+1. Player or DM submits a post-session issue via GitHub Issue Form (short, mobile-friendly fields)
+2. GitHub Action detects the issue by label (`post-session`) and triggers session-processing workflow
+3. Summarisation step extracts structured draft artefacts from issue content
+4. Draft artefacts are written to a session-specific branch with an immediate pull request for review
+5. Developer reviews output and determines whether continuity, lore, or canon updates are needed
+
+**Intake form fields**: session identifier or date, player/character name, favourite moment, biggest concern or correction, character's next intention, optional notes.
+
+**Rationale**: Balances low player effort, structured intake, minimal DM administration, and clear separation between draft evidence and approved world state. Preserves audit trail and aligns with branch-first review practices.
+
+**Deferred**: Automatic downstream agent fan-out (continuity, lore) from intake. Early versions should produce follow-up tasks or recommendations rather than chaining autonomous updates.
+
+**See**: `.reflections/implementation/post_session_intake.md` for full workflow analysis and options.
 
 ---
 
@@ -218,6 +239,8 @@ This document tracks confirmed design decisions for the Tabletop-Engine project.
 * Structured validation schemas for agents
 * Issue/PR templates and GitHub quickstart guide
 * Session primer generation (TL;DR, scene flow, relevant file links, fallback logic)
+* Session deliverables schema: structured artefacts per session (summary, notable events, proposed state changes, unresolved questions, contradictions)
+* Post-session intake workflow: GitHub Issue Form schema, routing labels, automated branch and pull request scaffolding, and intake-to-draft artefact pipeline
 * Session log output schema and standardized post-session intake schema
 * Observability of campaign changes (historical record)
 * Devlog write-ups from reflection notes
@@ -267,10 +290,11 @@ This document tracks confirmed design decisions for the Tabletop-Engine project.
 
 ## Document Status
 
-**Source Files** (marked "Current" as of 06/04/2026):
+**Source Files** (marked "Current" as of 17/04/2026):
 - `.reflections/implementation/design_goals.md`
 - `.reflections/implementation/engineering_principles.md`
 - `.reflections/implementation/agent_principles.md`
+- `.reflections/implementation/post_session_intake.md`
 - `.reflections/background/orchestration_2.md`
 - `.reflections/reviews/existing_work.md`
 - `.reflections/reviews/agentic_merits.md`

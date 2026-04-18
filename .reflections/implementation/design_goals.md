@@ -1,7 +1,7 @@
 # Design direction for minimum viable product and beyond
 
 - **Date recorded**: 04/04/2026
-- **Last updated**: 06/04/2026
+- **Last updated**: 17/04/2026
 - **Status**: Current
 
 This reflection records the design goals of the MVP, as determined from existing work and other reflections, as well as development risks not related to agentic development or software engineering principles.
@@ -21,6 +21,8 @@ This reflection records the design goals of the MVP, as determined from existing
 * TTRPG-specific grounding for rules/state/spoiler control
 * Long-term campaign memory (evolving versioned canon through bible, world state, consistent NPCs)
 * Established workflow; approved canon maintained on main & session changes pushed to branch first of all
+* Session deliverables: structured output artefacts per session (summary, notable events, proposed state changes, unresolved questions)
+* Post-session intake workflow: GitHub Issue Forms as intake surface with automated branch, summarisation, and pull request review pipeline
 
 ### MVP Deliverables
 
@@ -33,6 +35,8 @@ This reflection records the design goals of the MVP, as determined from existing
 * Structured validation schemas for agents
 * Issue/pr templates for contributors along with GitHub quickstart guide
 * Session primer generation for live workflow (TL;DR, scene flow, relevant file links and fallback logic)
+* Session deliverables schema: structured artefacts per session (summary, notable events, proposed state changes, unresolved questions, contradictions)
+* Post-session intake workflow: GitHub Issue Form schema, routing labels, automated branch and pull request scaffolding, intake-to-draft artefact pipeline
 * Session log output schema and intake for session recording with standardised post-session schema
 * Observability of campaign changes (historical record)
 * Devlog write-ups from reflection notes, framing 'applying software architecture to tabletop campaign design'
